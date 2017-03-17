@@ -32,7 +32,8 @@
 *= require bootstrap-modal/bootstrap-modal
 * require dashboard/custom.scss.erb
 *= require dashboard/project.scss.erb
-
+*= require dashboard/overview.scss.erb
+*= require dashboard/tabs.scss.erb
 
 * require_tree dashboard/custom/custom
  */

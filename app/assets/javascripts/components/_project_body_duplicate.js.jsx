@@ -5,30 +5,30 @@ let ProjectBodyDuplicate = React.createClass({
               <div className="row">
 
                   <a href="#newProjectModalForm">
-                      <div className="col-md-3 col-xs-12 col-ms-12 project-item">
+                      <div className="col-md-3 col-xs-12 col-ms-12 project-item1">
                           <span className="genicon-add-circle addcircle"></span>
                           <span className="addProject my-fonts">Add a project</span>
                       </div>
                   </a>
 
-                  <a href="#">
+                  <a href="/overview">
                       <div className="col-md-3 col-xs-12 col-ms-12 project-item">
                           <div className="circle-edit-project">
                               <a href="#" className="edit-project-a">
                                   <span className="genicon-pencil-boxed-compact edit-icon-project"></span>
                               </a>
                           </div>
-                          <img src="assets/project-default.png" id="projectDefaultImage"></img>
+                          {/*<img src="assets/project-default.png" id="projectDefaultImage"></img>*/}
                           <div className="col-md-12 col-xs-12 col-ms-12 progressbar-div">
-                              <div className="progress progress-sm  progress-bar-success"
+                              <div className="progress progress-sm  progress-bar-success pbar-border-radius"
                                    role="progressbar" aria-valuenow="80"
                                    aria-valuemin="0" aria-valuemax="100%"
-                                   style={{width:100+'%',height:15+'px'}}>
+                                   style={{width:80+'%',height:15+'px'}}>
                               </div>
                           </div>
                           <div className="project-details">
                               <span className="pull-left project-name my-fonts">Sandcity</span>
-                              <span className=" pull-right project-percentage-complete-green my-fonts">80
+                              <span className=" pull-right project-percentage-complete-green ">80
                                   <span className="percentage">%</span>
                               </span>
                           </div>
@@ -42,16 +42,16 @@ let ProjectBodyDuplicate = React.createClass({
                                   <span className="genicon-pencil-boxed-compact edit-icon-project"></span>
                               </a>
                           </div>
-                          <img src="assets/project-default.png" id="projectDefaultImage"></img>
+                          {/*<img src="assets/project-default.png" id="projectDefaultImage"></img>*/}
                           <div className="col-md-12 col-xs-12 col-ms-12 progressbar-div">
-                              <div className="progress progress-sm  progress-bar-warning"
+                              <div className="progress progress-sm  progress-bar-warning pbar-border-radius"
                                    role="progressbar" aria-valuenow="80"
                                    aria-valuemin="0" aria-valuemax="100%"
                                    style={{width:50+'%',height:15+'px'}}>
                               </div>
                           </div>
                           <div className="project-details my-fonts">
-                              <span className="pull-left project-name">Sandcity</span>
+                              <span className="pull-left project-name my-fonts">Sandcity</span>
                               <span className=" pull-right project-percentage-complete-orange">60
                                  <span className="percentage">%</span>
                               </span>
@@ -66,16 +66,16 @@ let ProjectBodyDuplicate = React.createClass({
                                   <span className="genicon-pencil-boxed-compact edit-icon-project"></span>
                               </a>
                           </div>
-                          <img src="assets/project-default.png" id="projectDefaultImage"></img>
+                          {/*<img src="assets/project-default.png" id="projectDefaultImage"></img>*/}
                           <div className="col-md-12 col-xs-12 col-ms-12 progressbar-div">
-                              <div className="progress progress-sm  progress-bar-danger my-fonts"
+                              <div className="progress progress-sm  progress-bar-danger  pbar-border-radius my-fonts"
                                    role="progressbar" aria-valuenow="80"
                                    aria-valuemin="0" aria-valuemax="100%"
                                    style={{width:20+'%',height:15+'px'}}>
                               </div>
                           </div>
                           <div className="project-details my-fonts">
-                              <span className="pull-left project-name">Sandcity</span>
+                              <span className="pull-left project-name my-fonts">Sandcity</span>
                               <span className=" pull-right project-percentage-complete-danger">40
                                  <span className="percentage">%</span>
                               </span>
