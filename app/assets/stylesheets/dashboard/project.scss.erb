@@ -1,3 +1,5 @@
+@import 'colors';
+
 
 #logo{
   height:30px;
@@ -7,28 +9,29 @@
 
 #projectBodyDiv{
   margin-top: 12%;
-  background: #fff;
+  background: $white;
 }
 
 #homeProjects{
-  padding-top: 15px;
+  padding-top: 1px;
+
 }
 
 
 .project-item1{
   height: 300px;
   background: #D8DDE6;
-  border: 25px solid #FFFFFF;
+  border: 25px solid $white;
 }
 
 .project-item{
   height: 300px;
   background: #D8DDE6;
-  border: 25px solid #FFFFFF;
+  border: 25px solid $white;
   background-image: url(/assets/project-default.png);
   background-position: 50% 40%;
   background-repeat: no-repeat;
-  background-size: 50px 50px;
+  background-size: 68px 54px;
 
 }
 
@@ -42,9 +45,11 @@
 
 .addProject {
   position: relative;
-  top: 40%;
+  top: 44%;
   left: 9%;
-  color: #073064;
+  color: #5C676A;
+
+
 
 }
 
@@ -100,9 +105,11 @@
 }
 
 .project-name{
-  color: #FFFFFF;
+  color: $white;
   font-size: 14px;
   font-family: Roboto;
+  padding-left: 10px;
+  padding-top: 3px;
 }
 
 
@@ -111,7 +118,7 @@
   height: 23px;
   width: 23px;
   border-radius: 25px;
-  background: #FFFFFF;
+  background: $white;
   position: absolute;
   left: 90%;
   top: 2%;
@@ -120,25 +127,25 @@
 
 .my-fonts{
   font-size: 12pt;
-  font-family: Roboto;
+  font-family: Roboto,  'Sans-Serif';
 }
 
 
 .edit-project-a:hover{
-  color: #FFFFFF;
+  color: $white;
 }
 
 .project-percentage-complete-green{
   color: #5C8B5C;
   font-size: 20pt;
-  font-family: Serif;
+  font-family: Roboto,  'Sans-Serif';
   font-weight: bold;
   margin-bottom: 4px;}
 
 .project-percentage-complete-orange{
   color: #FDAD4E;
   font-size: 20pt;
-  font-family: Roboto;
+  font-family: Roboto,  'Sans-Serif';
   font-weight: bold;
   margin-bottom: 4px;
 }
@@ -146,7 +153,7 @@
 .project-percentage-complete-danger{
   color: #D9534F;
   font-size: 20pt;
-  font-family: Roboto;
+  font-family: Roboto,  'Sans-Serif';
   font-weight: bold;
   margin-bottom: 4px;
 }
@@ -160,31 +167,59 @@
   background:  #D8DDE6;
   height: 20px;
   margin-top: 30px;
-  font-family: Roboto;
+  font-family: Roboto,  'Sans-Serif';
   font-size: 14px;
   text-align: center;
 }
 
-.archivedList{
+.archived-table-th{
   text-align: center;
   background: #f5f5f5;
-  font-family: Roboto;
+  font-family: Roboto,  'Sans-Serif';
   height: 40px;
   padding-top: 10px;
+  width: 330px;
 }
 
+.archived-table-td{
+  text-align: center;
+  background:  $white;
+  font-family: Roboto,  'Sans-Serif';
+  height: 40px;
+  padding-top: 10px;
+  width: 330px;
+}
+
+.restore-archive{
+  background: $darker-grey;
+  width: 80px;
+  position: relative;
+  left: 38%;
+  color: $white;
+  height: 25px;
+  padding-top: 4px;
+}
+
+.th-td-name{
+  text-align: left;
+  padding-left: 30px;
+}
+
+.archived-red{
+  color:$bidii-red;
+}
 
 
 .action-edit{
   text-align: right;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: Roboto, 'Sans-Serif';
 }
 
 .action-delete{
   text-align: left;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: Roboto,  'Sans-Serif';
 }
 
 
@@ -192,16 +227,16 @@
   text-decoration: none;
   height: 30px;
   width: 100px;
-  color: #FFF;
+  color:  $white;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: Roboto,  'Sans-Serif';
 }
 
 
 .restore-a:hover{
   text-decoration: none;
   background: #5cb85c;
-  color: #FFFFFF;
+  color:  $white;
 }
 
 .action-div{
@@ -210,12 +245,11 @@
 
 }
 
-.spinner{
-  color: #FFFFFF;
-  vertical-align: middle;
+
+.p-l-r-20{
+  padding-left: 25px;
+  padding-right: 25px;
 }
-
-
 
 .archive-list-action{
   padding-top: 10px;

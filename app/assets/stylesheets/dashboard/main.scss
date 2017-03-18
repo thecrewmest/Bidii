@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700');
+@import 'common';
+
+
+
 body.bg_style_3 {
     background: url(bg_3.png)!important
 }
@@ -6,23 +11,27 @@ body.bg_style_3 {
 .btn,
 .btn-icon .badge,
 body {
-  font-family: "Open+Sans", sans-serif
+  font-family: 'Roboto', sans-serif;
 }
+
 
 html, body {
   color: #000;
   direction: ltr;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   padding: 0!important;
   margin: 0!important;
   background: #fff
 }
 
+
+
 .page-header h1,
 body h1,
 body h2,
 body h3 {
-  font-family: Raleway, sans-serif
+  font-family: 'Roboto', sans-serif;
 }
 
 body.bg_style_1 {
@@ -827,7 +836,7 @@ a.bricky:hover {
 .navbar>.container .navbar-brand {
     padding: 14px 10px 12px;
     margin-left: 0;
-    font-family: Raleway, sans-serif;
+  font-family: 'Roboto', sans-serif;
     min-width: 210px
 }
 
@@ -2942,7 +2951,7 @@ td.column-right {
 
 .dz-default.dz-message {
     font-size: 21px!important;
-    font-family: Raleway, sans-serif!important
+  font-family: 'Roboto', sans-serif!important
 }
 
 .wysiwyg {
@@ -3341,7 +3350,7 @@ body.error-full-page .page-error {
 
 #inline-columns blockquote,
 #inline-columns blockquote:before {
-    font-family: "Times New Roman", Times, Georgia, serif
+  font-family: 'Roboto', sans-serif;
 }
 
 #inline-headerLeft h3 {
@@ -3432,7 +3441,7 @@ body.error-full-page .page-error {
 }
 
 div.timeline {
-    font-family: Arial;
+  font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     overflow: hidden;
     position: relative
@@ -4498,7 +4507,7 @@ ul#countdown li p.timeRefSeconds {
 .fc-header-title h2,
 .fc-toolbar h2 {
     color: #666;
-    font-family: Raleway, sans-serif;
+  font-family: 'Roboto', sans-serif;
     font-weight: 200;
     letter-spacing: -1px
 }
@@ -4636,7 +4645,7 @@ body.lock-screen .user-info {
 
 body.lock-screen .user-info h1 {
     color: #666;
-    font-family: Raleway, sans-serif;
+  font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 300;
     line-height: 32px;
@@ -5005,7 +5014,7 @@ body.lock-screen .user-info>span em {
 }
 
 .invoice h4 {
-    font-family: "Open+Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
     font-weight: 300!important
 }
 

@@ -1,13 +1,13 @@
 let ProjectBodyDuplicate = React.createClass({
    render() {
        return(
-           <div className="container p-l-100" id="projectBodyDiv">
+           <div className="container" id="projectBodyDiv">
               <div className="row">
 
                   <a href="#newProjectModalForm">
                       <div className="col-md-3 col-xs-12 col-ms-12 project-item1">
                           <span className="genicon-add-circle addcircle"></span>
-                          <span className="addProject my-fonts">Add a project</span>
+                          <span className="addProject my-fonts f-r">Add a project</span>
                       </div>
                   </a>
 
@@ -15,7 +15,7 @@ let ProjectBodyDuplicate = React.createClass({
                       <div className="col-md-3 col-xs-12 col-ms-12 project-item">
                           <div className="circle-edit-project">
                               <a href="#" className="edit-project-a">
-                                  <span className="genicon-pencil-boxed-compact edit-icon-project"></span>
+                                  <span className="genicon-pencil-boxed-compact edit-icon-project "></span>
                               </a>
                           </div>
                           {/*<img src="assets/project-default.png" id="projectDefaultImage"></img>*/}
@@ -27,9 +27,9 @@ let ProjectBodyDuplicate = React.createClass({
                               </div>
                           </div>
                           <div className="project-details">
-                              <span className="pull-left project-name my-fonts">Sandcity</span>
-                              <span className=" pull-right project-percentage-complete-green ">80
-                                  <span className="percentage">%</span>
+                              <span className="pull-left project-name my-fonts f-r">Sandcity</span>
+                              <span className=" pull-right project-percentage-complete-green f-r ">80
+                                  <span className="percentage f-r">%</span>
                               </span>
                           </div>
                       </div>
@@ -51,7 +51,7 @@ let ProjectBodyDuplicate = React.createClass({
                               </div>
                           </div>
                           <div className="project-details my-fonts">
-                              <span className="pull-left project-name my-fonts">Sandcity</span>
+                              <span className="pull-left project-name my-fonts f-r">Sandcity</span>
                               <span className=" pull-right project-percentage-complete-orange">60
                                  <span className="percentage">%</span>
                               </span>
@@ -75,16 +75,16 @@ let ProjectBodyDuplicate = React.createClass({
                               </div>
                           </div>
                           <div className="project-details my-fonts">
-                              <span className="pull-left project-name my-fonts">Sandcity</span>
-                              <span className=" pull-right project-percentage-complete-danger">40
-                                 <span className="percentage">%</span>
+                              <span className="pull-left project-name my-fonts f-r">Sandcity</span>
+                              <span className=" pull-right project-percentage-complete-danger f-r">40
+                                 <span className="percentage f-r">%</span>
                               </span>
                           </div>
                       </div>
                  </a>
 
 
-           </div>
+               </div>
 
 
 
@@ -92,61 +92,49 @@ let ProjectBodyDuplicate = React.createClass({
                {/*Archived projects*/}
 
                <div className="row">
-                   <div className="panel-group accordion-custom" id="accordion">
-                       <div className="panel panel-default" id="accordionBody">
-                           <div className="panel-heading archived-projects-according-heading">
-                               <h4 className="panel-title">
-                                   <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                      href="#collapseOne" style={{background:'#D8DDE6'}}>
-                                       <i className="icon-arrow"></i>
-                                         <span className="my-fonts">Archived Projects</span>
-                                   </a>
-                               </h4>
-                           </div>
-                           <div id="collapseOne" className="panel-collapse collapse">
-                               <div className="panel-body">
-
-                                   <div className="col-md-12 col-xs-12 col-ms-12 archived">
-                                       <div className="col-md-3 col-xs-4 col-4 my-fonts" classID="projectName">Project Name</div>
-                                       <div className="col-md-3 col-xs-3 col-3 my-fonts" classID="projectName">Project ID</div>
-                                       <div className="col-md-3 col-xs-3 col-3 my-fonts" classID="dateArchived">Date</div>
-                                       <div className="col-md-3 col-xs-2 col-2 my-fonts" classID="action my-font">Action</div>
-                                   </div>
-
-
-
-
-                                   <div className="col-md-12 col-xs-12 col-ms-12 archivedList">
-                                       <div className="col-md-3 col-xs-4 col-4 my-fonts" classID="projectName">Project MB6</div>
-                                       <div className="col-md-3 col-xs-3 col-3 my-fonts" classID="projectName">PJ001</div>
-                                       <div className="col-md-3 col-xs-3 col-3 my-fonts" classID="projectName">
-                                           <span style={{color:'#D9534F'}}>Archived</span> 01-12-2016</div>
-                                       <div className="col-md-3 col-xs-2 col-2 archive-list-action">
-                                           <div className="col-md-4 col-xs-3 col-ms 2 action-div my-fonts">
-                                               <a href="#" className="restore-a">
-                                                   <span className="genicon-spinner-arrows spinner my-fonts"></span>
-                                                   Restore
-                                               </a>
-                                           </div>
-                                       </div>
-                                   </div>
-
-
-                                   <div className="col-md-12 col-xs-12 col-ms-12 archivedList">
-                                       <div className="col-md-3 col-xs-4 col-4" classID="projectName">Project Smart</div>
-                                       <div className="col-md-3 col-xs-3 col-3" classID="projectName">PJ002</div>
-                                       <div className="col-md-3 col-xs-3 col-3" classID="projectName">
-                                           <span style={{color:'#D9534F'}}>Archived</span> 12-12-2016</div>
-                                       <div className="col-md-3 col-xs-2 col-2 archive-list-action">
-                                           <div className="col-md-4 col-xs-4 col-ms 2 action-div">
-                                               <a href="#" className="restore-a">
-                                                   <span className="genicon-spinner-arrows spinner"></span>
-                                                   Restore
-                                               </a>
-                                           </div>
-                                       </div>
-                                   </div>
-
+                   <div className="col-sm-12 p-l-r-20">
+                       <div className="panel-group accordion-custom" id="accordion">
+                           <div className="panel panel-default" id="accordionBody">
+                               <div className="panel-heading archived-projects-according-heading">
+                                   <h4 className="panel-title">
+                                       <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+                                          href="#collapseOne"  style={{background:'#D8DDE6',}}>
+                                           <i className="icon-arrow"></i>
+                                           <span className="my-fonts f-r">Archived Projects</span>
+                                       </a>
+                                   </h4>
+                               </div>
+                               <div id="collapseOne" className="panel-collapse collapse">
+                                   <table class="table table-striped">
+                                       <thead>
+                                       <tr>
+                                           <th className="archived-table-th th-td-name">Project name</th>
+                                           <th className="archived-table-th">Budget</th>
+                                           <th className="archived-table-th">Date archived</th>
+                                           <th className="archived-table-th">Action</th>
+                                       </tr>
+                                       </thead>
+                                       <tbody>
+                                       <tr>
+                                           <td className="archived-table-td th-td-name">Adehyie House</td>
+                                           <td className="archived-table-td">$800,000</td>
+                                           <td className="archived-table-td">
+                                               <span className="archived-red">Archived:</span> 31 Jan 2017</td>
+                                           <td className="archived-table-td td-action">
+                                               <div className="restore-archive">Restore</div>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td className="archived-table-td th-td-name">Panorma Areana</td>
+                                           <td className="archived-table-td">$900,000</td>
+                                           <td className="archived-table-td">
+                                               <span className="archived-red">Archived:</span> 01 February 2017</td>
+                                           <td className="archived-table-td td-action">
+                                               <div className="restore-archive">Restore</div>
+                                           </td>
+                                       </tr>
+                                       </tbody>
+                                   </table>
                                </div>
                            </div>
                        </div>
