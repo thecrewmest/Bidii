@@ -3,7 +3,6 @@
 
 
 .my-fonts{
-  font-size: 12pt;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -73,7 +72,10 @@
 
 .tasks-ongoing-table{
   font-family: my-fonts;
+  font-size: 14pt;
 }
+
+
 
 }
 
@@ -107,7 +109,8 @@
   width: 150px;
   margin-top:0;
   margin-bottom:0;
-  color: red;
+  border-color: $light-green-blue;
+  padding-bottom: 8px;
 }
 
 .percentage-complete{
@@ -123,6 +126,17 @@
   margin: 0 auto; width: 200px;
 }
 
+
+.pbar-descriptions{
+  position: relative;
+  top: 10px;
+}
+
+.icon{
+  position: relative;
+  top: 10px;
+  vertical-align: middle;
+}
 
 .manatwork{
   color: #5CB85C;
@@ -191,6 +205,11 @@
 }
 
 
+.tasks-completed-table{
+  position: relative;
+  top: 33px;
+}
+
 .archived-table-th{
   background:$light-blue-grey;
 }
@@ -213,10 +232,19 @@
   background: $light-blue;
   text-align: center;
   padding-top: 7px;
+  margin-top: 0;
   display: inline-block;
   vertical-align: middle;
-  position: absolute;
-  left: 85%;
+  position: relative;
+}
+
+.ac{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background: $light-blue;
+  display: inline-block;
+  border-radius: 17px;
 }
 
 .assignee-circle > span {

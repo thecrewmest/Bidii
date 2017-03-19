@@ -38,8 +38,10 @@ const Overview = React.createClass({
                                     </div>
                                 </div>
                                 <p className="overview-task-in-progress my-fonts">
-                                    <span className="genicon-manatwork manatwork"></span>
-                                    <span>In progress:(4 tasks ongoing, 50%)</span>
+                                    <span className="genicon-manatwork manatwork icon"></span>
+                                    <span className="pbar-descriptions">
+                                        In progress:(4 tasks ongoing, 50%)
+                                    </span>
                                 </p>
 
                                 <div className="overview-progressbar-div">
@@ -50,8 +52,8 @@ const Overview = React.createClass({
                                     </div>
                                 </div>
                                 <p className="overview-task-in-progress my-fonts">
-                                    <span className="genicon-flag flag"></span>
-                                     <span> Behind: (1 task, 0%)</span>
+                                    <span className="genicon-flag flag icon"></span>
+                                     <span className="pbar-descriptions"> Behind: (1 task, 0%)</span>
                                 </p>
 
                                 <div className="overview-progressbar-div">
@@ -62,8 +64,10 @@ const Overview = React.createClass({
                                     </div>
                                 </div>
                                 <p className="overview-task-in-progress my-fonts">
-                                    <span className="genicon-exclamation exclamation"></span>
-                                    <span>Late/problematic:(1 task, 0%)</span>
+                                    <span className="genicon-exclamation exclamation icon"></span>
+                                    <span className="pbar-descriptions">
+                                        Late/problematic:(1 task, 0%)
+                                    </span>
                                 </p>
 
                             </div>
@@ -77,7 +81,7 @@ const Overview = React.createClass({
                             </p>
 
 
-                            <table className="table table-striped tasks-ongoing-table">
+                            <table className="table table-striped tasks-ongoing-table ">
                                 <thead>
                                 <tr className="ongoing-task-table-head">
                                     <th className="archived-table-th th-td-name">Recent Reports</th>
@@ -109,7 +113,7 @@ const Overview = React.createClass({
                                             <span className="genicon-person"></span>
                                         </div>
                                         <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;&nbsp;Vansolo
+                                            &nbsp;&nbsp;&nbsp;Vansolo
                                         </span>
                                     </td>
                                 </tr>
@@ -193,7 +197,7 @@ const Overview = React.createClass({
                                             <span className="genicon-person"></span>
                                         </div>
                                         <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;&nbsp;Dancun
+                                            &nbsp;&nbsp;&nbsp;&nbsp;Kelvin
                                         </span>
                                     </td>
                                 </tr>
@@ -209,7 +213,7 @@ const Overview = React.createClass({
                                 4 tasks completed
                             </p>
 
-                            <table className="table table-striped tasks-ongoing-table">
+                            <table className="table table-striped tasks-completed-table ">
                                 <thead>
                                 <tr >
                                     <th className="task-completed th-td-name ">Task Name</th>
@@ -265,7 +269,7 @@ const Overview = React.createClass({
                                             <span className="genicon-person"></span>
                                         </div>
                                         <span className="assignee-name">
-                                            eric
+                                            Erickso
                                         </span>
                                     </td>
                                 </tr>
