@@ -1,9 +1,35 @@
+@import 'colors';
+
+
+
 /* FONT RESET */
 
-
-span.f-r{
+span .f-r{
   font-family: 'Roboto', sans-serif;
 }
 
-
 /* END FONT RESET */
+
+
+/* TABLE RESET */
+.table > thead > tr > th,
+.table > thead > tr
+{
+  border: none;
+}
+
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  border-top: 1px solid $light-blue;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color:$light-grey ;
+}
+
+/* TABLE FONT RESET */

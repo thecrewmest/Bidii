@@ -1,43 +1,80 @@
+@import 'colors';
+
+
 
 .my-fonts{
   font-size: 12pt;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .download{
   padding-left: 15px;
+  color: $darker-grey;
 }
 
-.project-title{
+
+.project-t{
   position: relative;
-  left: 25%;
+  top: 32px;
+  font-family: my-fonts;
+}
+
+.project-n{
+  position: relative;
+  top: 30px;
+  font-size: 15pt;
+  font-weight: bold;
+  left: 3%;
 }
 
 .download-file-pdf{
   text-decoration: none;
-  position: absolute;
-  left: 10px;
+  position: relative;
+  color: $darker-grey;
+  font-family: my-fonts;
 }
 
 .download-file-word {
   text-decoration: none;
-  position: absolute;
-  left: 20px;
+  color: $darker-grey;
 }
 
 
 .download-file:hover{
   text-decoration: none;
-  background: #073064;
-  color: #FFFFFF;
 }
 
-.side-bar{
-  background: #D8DDE6;
-  height: 543px;
+.side-bar-and-content{
+  height: 545px;
   position: relative;
-  top:130px;
+  top:131px;
   text-align: center;
+  max-height: inherit;
+}
+
+
+.overview-task-in-progress{
+  padding-bottom: 10px;
+}
+.side-bar{
+  background: $light-blue;
+  height: 560px;
+  top:19px;
+  text-align: center;
+  max-height: inherit;
+  padding-left: 0;
+}
+
+
+
+.side-bar > .overview-progressbar-div {
+  margin: 0 auto;
+  width: 200px;
+
+.tasks-ongoing-table{
+  font-family: my-fonts;
+}
+
 }
 
 .sidebar-and-content-container{
@@ -45,15 +82,6 @@
   position: relative;
   top:130px;
   text-align: center;
-  background: red;
-}
-
-
-.overview-content{
-  position: relative;
-  top: 150px;
-  height: 500px;
-  background: #FFFFFF;
 
 }
 
@@ -61,31 +89,45 @@
 
 .status-and-icon{
   position: relative;
-  background:#f5f5f5;
-  height: 25px;
-  top: 20px;
+  background:$light-blue;
+  height: 28px;
   padding-top: 5px;
+  border-bottom: 1px solid $dark-grey;
+  border-top: 1px solid $dark-grey;
 }
 
 .days-remaining-number{
   position: relative;
   font-size: 50pt;
-  top: 30px;
+  top: 20px;
+}
+
+
+.line{
+  width: 150px;
+  margin-top:0;
+  margin-bottom:0;
+  color: red;
 }
 
 .percentage-complete{
   font-size: 16pt;
+  padding-bottom: 5px;
+  padding-top: 5px;
+
 }
 
-.over-progressbar-div{
+.overview-progressbar-div{
   background: #5C676A;
-  height: 15px;
+  height: 20px;
+  margin: 0 auto; width: 200px;
 }
+
 
 .manatwork{
   color: #5CB85C;
   vertical-align: middle;
-  font-size: 14pt;
+  font-size: 15pt;
 }
 
 .flag{
@@ -117,21 +159,126 @@
   padding-top: 0;
 }
 
+#overview{
+  margin-top: 10px;
+}
+
+.overview-content{
+  position: relative;
+  height: 546px;
+  background: $white;
+  max-height: inherit;
+
+}
+
+.four-tasks-ongoing{
+  position: relative;
+  top: 30px;
+  font-size: 13px;
+
+}
+
+
+.darker-grey-hammer{
+  color: $darker-grey;
+  font-size: 15pt;
+  padding-right: 5px;
+}
+
+.tasks-ongoing-table{
+  position: relative;
+  top: 33px;
+}
+
+
+.archived-table-th{
+  background:$light-blue-grey;
+}
+
+.task-completed-th{
+  background: red;
+}
+
+.assignee-name{
+  top: 10px;
+  padding-left: 5px;
+  font-family: my-fonts;
+}
+
 
 .assignee-circle{
   height: 30px;
   width: 30px;
   border-radius: 17px;
-  background: #ADAEC1;
+  background: $light-blue;
   text-align: center;
   padding-top: 7px;
   display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 85%;
 }
+
+.assignee-circle > span {
+  color: $darkest-grey;
+}
+
+.ongoing-task-table-head{
+  background: red;
+}
+
 
 .person-overview{
-  color: #5C676A;
+  color: #979797;
 }
 
-#ttt{
+.tick-circle{
+  color: $bidii-green;
+  font-size: 15pt;
   vertical-align: middle;
+  padding-right: 5px;
+}
+
+.cross-red{
+  color: $bidii-red;
+  font-size: 15pt;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.task-completed{
+  background: $light-blue-grey;
+}
+
+.tch{
+  text-align: center;
+}
+
+.tick-dotted{
+  font-size: 15pt;
+  vertical-align: middle;
+}
+
+
+.tick-solid{
+  font-size: 15pt;
+  vertical-align: middle;
+  color: $bidii-green;
+}
+
+.ticks{
+  position: absolute;
+  left: 48%;
+}
+
+
+
+
+
+
+.cross-grey{
+  color: $darker-grey;
+  font-size: 15pt;
+  vertical-align: middle;
+  padding-right: 5px;
 }

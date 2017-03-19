@@ -105,7 +105,7 @@ let ProjectBodyDuplicate = React.createClass({
                                    </h4>
                                </div>
                                <div id="collapseOne" className="panel-collapse collapse">
-                                   <table class="table table-striped">
+                                   <table className="table table-striped">
                                        <thead>
                                        <tr>
                                            <th className="archived-table-th th-td-name">Project name</th>
