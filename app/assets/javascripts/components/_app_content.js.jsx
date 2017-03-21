@@ -10,11 +10,6 @@ var AppContent = React.createClass({
                         </div>
                     </div>
 
-                    {/* Main Content */}
-                    <div className="col-sm-9">
-                        <div className="variable-content">
-                        </div>
-                    </div>
                 </div>
             </div>
         )

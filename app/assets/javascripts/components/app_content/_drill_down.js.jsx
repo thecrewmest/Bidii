@@ -4,23 +4,24 @@ var DrillDown = React.createClass({
             <div className="drill-criteria">
                 {/* Criteria */}
                 <div className="head">
-                    <div className="row">
+                    <div className="row icon">
                         <div className="col-xs-9">
-                            <h5>Criteria</h5>
+                            <h5 className="criteria">Criteria</h5>
                         </div>
                         <div className="col-xs-3">
-                            <span className="genicon-spinner-arrows reload"></span>
+                            <span className="genicon-spinner-arrows reload rl icon"></span>
+                            <span className="genicon-magnify magnify"></span>
                         </div>
                     </div>
                 </div>
 
                 {/*Projects*/}
-                <div className="panel-group accordion-custom" id="accordion">
+                <div className="panel-group accordion-custom my-fonts" id="accordion">
                     <div className="panel panel-default">
                         <div className="panel-heading">
                             <h4 className="panel-title">
                                 <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    <i className="icon-arrow"></i>
+                                    <i className="icon-arrow"></i>&nbsp;
                                     Projects
                                 </a>
                             </h4>
@@ -61,7 +62,7 @@ var DrillDown = React.createClass({
                         <div className="panel-heading">
                             <h4 className="panel-title">
                                 <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
-                                    <i className="icon-arrow"></i>
+                                    <i className="icon-arrow"></i>&nbsp;
                                     People
                                 </a>
                             </h4>
@@ -95,7 +96,7 @@ var DrillDown = React.createClass({
                         <div className="panel-heading">
                             <h4 className="panel-title">
                                 <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
-                                    <i className="icon-arrow"></i>
+                                    <i className="icon-arrow"></i>&nbsp;
                                     Company
                                 </a>
                             </h4>
@@ -129,7 +130,7 @@ var DrillDown = React.createClass({
                         <div className="panel-heading">
                             <h4 className="panel-title">
                                 <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
-                                    <i className="icon-arrow"></i>
+                                    <i className="icon-arrow"></i>&nbsp;
                                     Status
                                 </a>
                             </h4>
@@ -138,7 +139,7 @@ var DrillDown = React.createClass({
                             <div className="panel-body">
                                 {/* All */}
                                 <div className="row">
-                                    <div className="col-sm-9">
+                                    <div className="col-sm-9 col-xs-9">
                                         <div className="checkbox">
                                             <label>
                                                 <input type="checkbox" value="0" />
@@ -146,14 +147,14 @@ var DrillDown = React.createClass({
                                             </label>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3">
-                                        <span className="genicon-task-hammer-compact g-sm text-warm-grey-5"></span>
+                                    <div className="col-sm-3 col-xs-3">
+                                        <span className="genicon-task-hammer-compact hammer pull-right icon"></span>
                                     </div>
                                 </div>
 
                                 {/* Not Started */}
                                 <div className="row">
-                                    <div className="col-sm-9">
+                                    <div className="col-sm-9 col-xs-9">
                                         <div className="checkbox">
                                             <label>
                                                 <input type="checkbox" value="0" />
@@ -161,14 +162,14 @@ var DrillDown = React.createClass({
                                             </label>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3">
-                                        <span className="genicon-calendar-empty-compact g-sm text-warm-grey-4"></span>
+                                    <div className="col-sm-3 col-xs-3">
+                                        <span className="genicon-calendar-empty-compact pull-right g-sm text-warm-grey-4 calender icon"></span>
                                     </div>
                                 </div>
 
                                 {/* In progress*/}
                                 <div className="row">
-                                    <div className="col-sm-9">
+                                    <div className="col-sm-9 col-xs-9">
                                         <div className="checkbox">
                                             <label>
                                                 <input type="checkbox" value="0" />
@@ -176,14 +177,14 @@ var DrillDown = React.createClass({
                                             </label>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3">
-                                        <span className="genicon-manatwork-compact text-task-light-green g-sm"></span>
+                                    <div className="col-sm-3 col-xs-3">
+                                        <span className="genicon-manatwork-compact pull-right text-task-light-green g-sm manatwork icon"></span>
                                     </div>
                                 </div>
 
                                 {/* Behind */}
                                 <div className="row">
-                                    <div className="col-sm-9">
+                                    <div className="col-sm-9 col-xs-9">
                                         <div className="checkbox">
                                             <label>
                                                 <input type="checkbox" value="0" />
@@ -191,14 +192,14 @@ var DrillDown = React.createClass({
                                             </label>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3">
-                                        <span className="genicon-warning-flag-compact text-task-amber g-sm"></span>
+                                    <div className="col-sm-3 col-xs-3">
+                                        <span className="genicon-warning-flag-compact pull-right text-task-amber g-sm flag icon"></span>
                                     </div>
                                 </div>
 
                                 {/* Late */}
                                 <div className="row">
-                                    <div className="col-sm-9">
+                                    <div className="col-sm-9 col-xs-9">
                                         <div className="checkbox">
                                             <label>
                                                 <input type="checkbox" value="0" />
@@ -206,14 +207,14 @@ var DrillDown = React.createClass({
                                             </label>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3">
-                                        <span className="genicon-bell-solid-compact text-task-red g-sm"></span>
+                                    <div className="col-sm-3 col-xs-3">
+                                        <span className="genicon-bell-solid-compact pull-right text-task-red g-sm bell icon"></span>
                                     </div>
                                 </div>
 
                                 {/* Problem */}
                                 <div className="row">
-                                    <div className="col-sm-9">
+                                    <div className="col-sm-9 col-xs-9">
                                         <div className="checkbox">
                                             <label>
                                                 <input type="checkbox" value="0" />
@@ -221,14 +222,14 @@ var DrillDown = React.createClass({
                                             </label>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3">
-                                        <span className="genicon-exclamation-compact text-task-red g-sm"></span>
+                                    <div className="col-sm-3 col-xs-3">
+                                        <span className="genicon-exclamation-compact pull-right text-task-red g-sm exclamation icon"></span>
                                     </div>
                                 </div>
 
                                 {/* Awaiting sign-off*/}
                                 <div className="row">
-                                    <div className="col-sm-9">
+                                    <div className="col-sm-9 col-xs-9">
                                         <div className="checkbox">
                                             <label>
                                                 <input type="checkbox" value="0" />
@@ -236,14 +237,14 @@ var DrillDown = React.createClass({
                                             </label>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3">
-                                        <span className="genicon-tick-dotted text-task-blue g-sm"></span>
+                                    <div className="col-sm-3 col-xs-3">
+                                        <span className="genicon-tick-dotted  pull-right text-task-blue g-sm tick-dotted icon"></span>
                                     </div>
                                 </div>
 
                                 {/*signed-of*/}
                                 <div className="row">
-                                    <div className="col-sm-9">
+                                    <div className="col-sm-9 col-xs-9">
                                         <div className="checkbox">
                                             <label>
                                                 <input type="checkbox" value="0" />
@@ -251,8 +252,8 @@ var DrillDown = React.createClass({
                                             </label>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3">
-                                        <span className="genicon-tick-solid text-task-dark-green g-sm"></span>
+                                    <div className="col-sm-3 col-xs-3">
+                                        <span className="genicon-tick-solid  pull-right text-task-dark-green g-sm tick-solid icon"></span>
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +267,7 @@ var DrillDown = React.createClass({
                         <div className="panel-heading">
                             <h4 className="panel-title">
                                 <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse5">
-                                    <i className="icon-arrow"></i>
+                                    <i className="icon-arrow"></i>&nbsp;
                                     Tasks
                                 </a>
                             </h4>
@@ -289,7 +290,7 @@ var DrillDown = React.createClass({
                         <div className="panel-heading">
                             <h4 className="panel-title">
                                 <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse7">
-                                    <i className="icon-arrow"></i>
+                                    <i className="icon-arrow"></i>&nbsp;
                                     Tags
                                 </a>
                             </h4>
@@ -312,7 +313,7 @@ var DrillDown = React.createClass({
                         <div className="panel-heading">
                             <h4 className="panel-title">
                                 <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse8">
-                                    <i className="icon-arrow"></i>
+                                    <i className="icon-arrow"></i>&nbsp;
                                     Dates
                                 </a>
                             </h4>

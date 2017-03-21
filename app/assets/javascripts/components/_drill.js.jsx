@@ -3,8 +3,9 @@ const Drill = React.createClass({
         return(
             <div>
                 <div className="navbar navbar-inverse navbar-fixed-top">
-                    <Header />
+                    <DrillHeader />
                 </div>
+
 
                 <div className="main-container">
                     <div className="sidebar-and-content-div">
@@ -120,11 +121,13 @@ const Drill = React.createClass({
                                 </div>
 
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
+
+
+            </div>
         )
     }
 });

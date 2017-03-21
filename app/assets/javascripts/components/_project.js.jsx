@@ -3,7 +3,7 @@ let Project = React.createClass({
         return(
             <div id="m">
                 <div className="navbar navbar-inverse navbar-fixed-top">
-                    <Header />
+                    <ProjectHeader />
                 </div>
 
                 <div className="main-container">

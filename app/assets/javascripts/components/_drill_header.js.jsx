@@ -1,10 +1,10 @@
-var Header = React.createClass({
+var DrillHeader = React.createClass({
     render() {
         return (
             <div>
                 <AppHeader />
                 <ProjectPropertiesTab />
-                <ProjectTab />
+                <DrillTab />
             </div>
         )
     }

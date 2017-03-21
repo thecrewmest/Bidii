@@ -11,6 +11,34 @@ span .f-r{
 /* END FONT RESET */
 
 
+/* Biddi Buttons */
+input[type=text].bidii-search {
+  background-color: $light-blue-grey;
+  box-shadow: none;
+  width: 242px;
+  border: none;
+  padding: 0 0 0 10px;
+  margin: 3px 0 0 0;
+  line-height: 0;
+  height: 27px;
+}
+
+input[type=text].bidii-search::after {
+  display: block;
+  content: 'X';
+  border:1px solid #000;
+  width: 80px;
+  height: 80px;
+  z-index: 1800;
+}
+
+
+/* GLYPHICONS */
+
+
+/* ENd GLGLYPHICONS */
+
+
 /* TABLE RESET */
 .table > thead > tr > th,
 .table > thead > tr

@@ -16,6 +16,7 @@
 * require sweetalert/sweetalert
 *= require dashboard/main
 *= require dashboard/main-responsive
+*= require dashboard/icons.scss.erb
 * require dashboard/print
 *= require dashboard/light
 * require bootstrap-datepicker/bootstrap-datepicker.standalone.min
@@ -33,6 +34,8 @@
 * require dashboard/custom.scss.erb
 *= require dashboard/project.scss.erb
 *= require dashboard/overview.scss.erb
+*= require dashboard/drill.scss.erb
+*= require dashboard/tasksheet.scss.erb
 *= require dashboard/tabs.scss.erb
 
 * require_tree dashboard/custom/custom
