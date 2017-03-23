@@ -1,12 +1,12 @@
-const TaskSheet = React.createClass({
+let TaskSheet = React.createClass({
     render() {
         return(
             <div>
                 <div className="navbar navbar-inverse navbar-fixed-top">
                     <div>
                         <AppHeader />
-                        <AppPropertiesTab />
-                        <VariablePropTab />
+                        <MainPropTab />
+                        <TaskSheetTab />
                     </div>
                 </div>
                 <span className="download-print-title">Download and print tasks assigned to team members</span><br />

@@ -34,7 +34,10 @@
 * require dashboard/custom.scss.erb
 *= require dashboard/project.scss.erb
 *= require dashboard/overview.scss.erb
+*= require dashboard/task.scss.erb
+*= require dashboard/budget.scss.erb
 *= require dashboard/drill.scss.erb
+*= require dashboard/collaborator.scss.erb
 *= require dashboard/tasksheet.scss.erb
 *= require dashboard/tabs.scss.erb
 
