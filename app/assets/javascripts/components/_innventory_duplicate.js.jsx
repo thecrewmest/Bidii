@@ -12,16 +12,16 @@ const Inventory = React.createClass({
                 </div>
 
 
-                <div className="main-container inv">
-                    <div className="inventory-content ">
-                        <div className="container 1">
-                            <div className="row ">
-                                <div className="col-sm-12 ">
+                <div className="main-container">
+                    <div className="inventory-content">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-sm-12">
                                     <div className="table-responsive">
                                         <table className="table table-striped table-hover"
                                                id="sample-table-2">
                                             <thead>
-                                            <tr className="th-inv">
+                                            <tr>
                                                 <th style={{width: 1 + "%"}}><input type="checkbox"/></th>
                                                 <th style={{width: 5 + "%"}}>IUID</th>
                                                 <th style={{width: 5 + "%"}} className="col-to-export">Date</th>
@@ -102,100 +102,6 @@ const Inventory = React.createClass({
                                                 {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
                                                 {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
                                             </tr>
-
-                                            <tr>
-                                                <th><input type="checkbox"/></th>
-                                                <td>IV1003</td>
-                                                <td>1-1-2017</td>
-                                                <td>Wood</td>
-                                                <td>1000</td>
-                                                <td>20</td>
-                                                <td>20000</td>
-                                                <td>20</td>
-                                                <td>980</td>
-                                                <td>John</td>
-                                                <td>
-                                                    <a href="#" className="data-tb-link" title="Edit">
-                                                        <span className="edit-row genicon-pencil-boxed-compact" />
-                                                    </a>
-                                                    <a href="#" title="Delete">
-                                                        <span style={{color: '#777'}} className="delete-row genicon-trash-stroke-compact" />
-                                                    </a>
-                                                </td>
-                                                {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
-                                                {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
-                                            </tr>
-
-
-                                            <tr>
-                                                <th><input type="checkbox"/></th>
-                                                <td>IV1003</td>
-                                                <td>1-1-2017</td>
-                                                <td>Wood</td>
-                                                <td>1000</td>
-                                                <td>20</td>
-                                                <td>20000</td>
-                                                <td>20</td>
-                                                <td>980</td>
-                                                <td>John</td>
-                                                <td>
-                                                    <a href="#" className="data-tb-link" title="Edit">
-                                                        <span className="edit-row genicon-pencil-boxed-compact" />
-                                                    </a>
-                                                    <a href="#" title="Delete">
-                                                        <span style={{color: '#777'}} className="delete-row genicon-trash-stroke-compact" />
-                                                    </a>
-                                                </td>
-                                                {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
-                                                {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
-                                            </tr>
-
-
-                                            <tr>
-                                                <th><input type="checkbox"/></th>
-                                                <td>IV1003</td>
-                                                <td>1-1-2017</td>
-                                                <td>Wood</td>
-                                                <td>1000</td>
-                                                <td>20</td>
-                                                <td>20000</td>
-                                                <td>20</td>
-                                                <td>980</td>
-                                                <td>John</td>
-                                                <td>
-                                                    <a href="#" className="data-tb-link" title="Edit">
-                                                        <span className="edit-row genicon-pencil-boxed-compact" />
-                                                    </a>
-                                                    <a href="#" title="Delete">
-                                                        <span style={{color: '#777'}} className="delete-row genicon-trash-stroke-compact" />
-                                                    </a>
-                                                </td>
-                                                {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
-                                                {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
-                                            </tr>
-
-
-                                            <tr>
-                                                <th><input type="checkbox"/></th>
-                                                <td>IV1003</td>
-                                                <td>1-1-2017</td>
-                                                <td>Wood</td>
-                                                <td>1000</td>
-                                                <td>20</td>
-                                                <td>20000</td>
-                                                <td>20</td>
-                                                <td>980</td>
-                                                <td>John</td>
-                                                <td>
-
-                                                </td>
-                                                {/*<td><a href="javscript:void(0)" className="edit-row"> Edit </a></td>*/}
-                                                {/*<td><a href="javscript:void(0)" className="delete-row"> Delete </a></td>*/}
-                                            </tr>
-
-
-
-
                                             <tr>
                                                 <th><input type="checkbox"/></th>
                                                 <td>IV1004</td>
@@ -221,7 +127,7 @@ const Inventory = React.createClass({
 
                                             </tbody>
                                             <tfoot>
-                                            <tr className="tf-inv">
+                                            <tr>
                                                 <th><input type="checkbox"/></th>
                                                 <th>IUID</th>
                                                 <th>Date</th>
@@ -325,11 +231,6 @@ const Inventory = React.createClass({
                                     </div>
                                     <div className="form-group col-md-6">
                                         <label>Taker</label>
-                                        <input type="text" ref='title' placeholder="Your name " className="form-control" />
-                                    </div>
-
-                                    <div className="form-group col-md-6">
-                                        <label>Task</label>
                                         <input type="text" ref='title' placeholder="Your name " className="form-control" />
                                     </div>
 
