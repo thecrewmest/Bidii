@@ -14,7 +14,7 @@ Project.create([
                        cover_image: 'proj4.jpg',
                        progress: 90,
                        is_archived: 'f',
-                       date_archived: nil,
+                       date_archived: '2017-01-12',
                        budget: 500000
                    },
                    {
@@ -23,8 +23,8 @@ Project.create([
                        cover_image: 'proj7.jpg',
                        progress: 10,
                        is_archived: 'f',
-                       date_archived: nil,
-                       budget: 565657
+                       date_archived: '2016-02-10',
+                       budget: 565657,
                    },
                    {
                        title: 'Destiny Creativity',
@@ -32,7 +32,7 @@ Project.create([
                        cover_image: 'proj8.jpg',
                        progress: 0,
                        is_archived: 'f',
-                       date_archived: nil,
+                       date_archived: '2017-03-02',
                        budget: 10000
                    },
                    {
@@ -41,7 +41,7 @@ Project.create([
                        cover_image: 'proj5.jpg',
                        progress: 100,
                        is_archived: 'f',
-                       date_archived: nil,
+                       date_archived: '2017-02-20',
                        budget: 10000
                    },
                    {
@@ -50,7 +50,7 @@ Project.create([
                        cover_image: 'proj4.jpg',
                        progress: 50,
                        is_archived: 'f',
-                       date_archived: nil,
+                       date_archived: '2017-01-11',
                        budget: 20000
                    },
                    {
@@ -59,7 +59,7 @@ Project.create([
                        cover_image: 'proj3.jpg',
                        progress: 40,
                        is_archived: 'f',
-                       date_archived: nil,
+                       date_archived: '2017-02-12',
                        budget: 50000
                    },
                    {
@@ -68,7 +68,7 @@ Project.create([
                        cover_image: 'proj6.jpeg',
                        progress: 50,
                        is_archived: 'f',
-                       date_archived: nil,
+                       date_archived: '2017-03-30',
                        budget: 70000
                    },
                    {
@@ -77,7 +77,7 @@ Project.create([
                        cover_image: 'proj7.jpg',
                        progress: 80,
                        is_archived: 't',
-                       date_archived: nil,
+                       date_archived: '2017-03-30',
                        budget: 800000
                    },
                    {
@@ -86,9 +86,31 @@ Project.create([
                        cover_image: 'proj3.jpg',
                        progress: 80,
                        is_archived: 't',
-                       date_archived: nil,
+                       date_archived: '2017-03-30',
                        budget: 900000
                    }
                ])
+
+
+User.create([
+                {
+                    first_name: 'joseph',
+                    last_name: 'muruiki',
+                    phone: '0547558472',
+                    company: 'The Mest Crew',
+                    profile_image: nil,
+                    password: 'administrator',
+                    email: 'vansolo313@gmail.com'
+                },
+                {
+                    first_name: 'daniel',
+                    last_name: 'faith',
+                    phone: '0236834486',
+                    company: 'The Divine',
+                    profile_image: nil,
+                    password: 'administrator',
+                    email: 'thecrewmest@gmail.com'
+                }
+            ])
 
 
