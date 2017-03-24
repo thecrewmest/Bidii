@@ -92,23 +92,3 @@ Project.create([
                ])
 
 
-User.create([
-              {
-                first_name: 'joseph',
-                last_name: 'muruiki',
-                phone: '0547558472',
-                company: 'The Mest Crew',
-                profile_image: nil,
-                password: 'administrator',
-                email: 'vansolo313@gmail.com'
-              },
-              {
-                  first_name: 'daniel',
-                  last_name: 'faith',
-                  phone: '0236834486',
-                  company: 'The Divine',
-                  profile_image: nil,
-                  password: 'administrator',
-                  email: 'thecrewmest@gmail.com'
-              }
-            ])
