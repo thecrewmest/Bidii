@@ -1,4 +1,4 @@
-const TaskSheet = React.createClass({
+let TaskSheet = React.createClass({
     render() {
         return(
             <div>

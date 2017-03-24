@@ -1,7 +1,7 @@
 const Budget = React.createClass({
     render() {
         return(
-            <div>
+            <div style={{background:'white'}}>
 
                 <div classNameName="navbar navbar-inverse navbar-fixed-top">
                     <div>
@@ -12,182 +12,437 @@ const Budget = React.createClass({
                 </div>
 
 
+                <div className="col-md-12 col-xs-12 info-panel pull-left">
+                    <div className="col-md-4 col-xs-12">
+                        <span className="project-budget">
+                            <span className="genicon-info-circle info-total-budget "></span>
+                            Total Project Budget: Ghc70,000
+                        </span>
+                    </div>
 
 
+                    <div className="col-md-4 col-xs-12">
+                        <span className="project-budget">
+                            <span className="genicon-info-circle info-budget-remaing "></span>
+                            Budget Remaining: Ghc30,000
+                        </span>
+                    </div>
+                </div>
 
-                <table className="table-b">
-                    <thead>
-                    <tr>
-                        <th id="hd">
-                            <div id="circle">
-                                <span id="Ghc">GHc</span>
-                                <span id="figure">4,000</span>
-                            </div>
-                        </th>
+                <table className="table-responsive budget-table">
+                    <tbody className="tb">
+                        <tr className="budget-row">
+                            <td className="budget-td-1">
+                                <div className="budget-circle">
+                                    <h4>GhC</h4>
+                                    <h3>40,000</h3>
+                                </div>
+                            </td>
 
-                        <th className="signs"><span id="sign">=</span></th>
+                            <td className="budget-td-2">
+                                <span className="equal">=</span>
+                            </td>
 
+                            <td className="budget-td-3">
+                                <div className="budget-circle">
+                                    <h4>GhC</h4>
+                                    <h3>35,000</h3>
+                                </div>
+                            </td>
 
-                        <th id="hd">
-                            <div id="circle">
-                                <span id="Ghc1">GHc</span>
-                                <span id="figure1">2,000</span>
-                            </div>
-                        </th>
+                            <td className="budget-td-4">
+                                <span className="plus">+</span>
+                            </td>
 
-                        <th className="signs"><span id="sign">+</span></th>
+                            <td className="budget-td-5">
+                                <div className="budget-circle">
+                                    <h4>GhC</h4>
+                                    <h3>15,000</h3>
+                                </div>
+                            </td>
 
+                            <td className="budget-td-6">
+                                <span className="plus">+</span>
+                            </td>
 
-                        <th id="hd">
-                            <div id="circle">
-                                <span id="Ghc2">GHc</span>
-                                <span id="figure2">1,500</span>
-                            </div>
-                        </th>
-
-                        <th className="signs"><span id="sign">+</span></th>
-
-
-                        <th id="hd">
-                            <div id="circle">
-                                <span id="Ghc3">GHc</span>
-                                <span id="figure3">500</span>
-                            </div>
-                        </th>
-
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td id="tdd">Current Cost</td>
-                        <th id="equal-th"></th>
-
-                        <td id="tdd">Cost of tasks completed</td>
-                        <th id="plus-th"></th>
-
-                        <td id="tdd">Cost of task ongoing</td>
-                        <th id="plus-th"></th>
-
-                        <td id="tdd">Cost of tasks not started</td>
-                    </tr>
-
+                            <td className="budget-td-7">
+                                <div className="budget-circle">
+                                    <h4>GhC</h4>
+                                    <h3>0,000</h3>
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
+
+
+                    <tfoot className="bf">
+                    <tr className="budge-footer">
+                        <td className="budget-td-1">
+                           Total current Cost
+                        </td>
+
+                        <td className="budget-td-2">
+
+                        </td>
+
+                        <td className="budget-td-3">
+                            Cost of Tasks Completed
+                        </td>
+
+                        <td className="budget-td-4">
+
+                        </td>
+
+                        <td className="budget-td-5">
+                            Cost of Tasks Ongoing
+                        </td>
+
+                        <td className="budget-td-6">
+
+                        </td>
+
+                        <td className="budget-td-7">
+                            Cost of Tasks not started
+                        </td>
+                    </tr>
+                    </tfoot>
                 </table>
 
 
 
-                <div className="col-md-12 col-xs-12" id="three-bar"></div>
-                {/*Descriptions*/}
-
-
-                <div className="container" id="three">
+                <div className="budget-breakdown">
                     <div className="row">
-                        <div className="col-md-4 col-xs-12" id="budget-comp"><span id="bh">Tasks With Budget</span>
-                            <div className="table-responsive">
-                                <table className="table table-striped table-hover">
-                                    <thead>
-                                    <tr>
-                                        <th id="tt" className="date">Budget</th>
-                                        <th id="tt">Task</th>
-                                        <th id="tt" className="supplied">%</th>
-                                        <th id="tt">End Date</th>
 
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td id="tt" className="date">100</td>
-                                        <td id="tt">Painting</td>
-                                        <td id="tt" className="supplied">60</td>
-                                        <td id="tt">1-2-2017</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td id="tt" className="date">300</td>
-                                        <td id="tt">Roofing</td>
-                                        <td id="tt" className="supplied">40</td>
-                                        <td id="tt">1-2-2017</td>
-
+                        <div className="col-md-4 col-xs-12 bb">
+                            <div className="desc-b">Task With Budget</div>
+                            <div className="table-responsive table-twb">
+                                <table className="table ">
+                                    <tr className="row-twb">
+                                        <th className="th-b-t">Task</th>
+                                        <th className="th-b">Budget</th>
+                                        <th className="th-b-pc">%</th>
+                                        <th className="th-b">End Date</th>
                                     </tr>
 
+                                    <tr>
+                                        <td>Foundation</td>
+                                        <td>4,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:100+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
 
-                                    </tbody>
+                                    <tr>
+                                        <td>Dredging</td>
+                                        <td>6,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-danger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:0+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Block laying</td>
+                                        <td>30,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:100+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-05-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Plastering</td>
+                                        <td>1000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-warning pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:50+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Framing</td>
+                                        <td>13,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-danger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:30+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Plumbing</td>
+                                        <td>4000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:70+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Furnishing</td>
+                                        <td>12000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-danger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:3+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Roofing</td>
+                                        <td>5000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-damger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:40+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tfoot>
+                                    <tr>
+                                        <th ></th>
+                                        <th className="tf-b">
+                                            Ghc70,000</th>
+                                        <th ></th>
+                                        <th ></th>
+                                    </tr>
+                                    </tfoot>
+
+
+
+
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div className="col-md-4 col-xs-12 bb">
+                            <div className="desc-b">Completed Tasks With Budget</div>
+                            <div className="table-responsive ">
+                                <table className="table ">
+                                    <tr>
+                                        <th className="th-b-t">Task</th>
+                                        <th className="th-b">Budget</th>
+                                        <th className="th-b-pc">%</th>
+                                        <th className="th-b">End Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Foundation</td>
+                                        <td>2,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:100+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Fencing</td>
+                                        <td>1,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:100+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Block laying</td>
+                                        <td>30,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:100+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Bending</td>
+                                        <td>2,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:100+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tfoot>
+                                    <tr>
+                                        <th ></th>
+                                        <th className="tf-b">
+                                            Ghc35,000</th>
+                                        <th ></th>
+                                        <th ></th>
+                                    </tr>
+                                    </tfoot>
+
+
+
+
                                 </table>
 
                             </div>
                         </div>
-                        <div className="col-md-4 col-xs-12" id="budget-comp"><span id="bh2">Completed Tasks With Budget</span>
-                            <div className="table-responsive">
-                                <table className="table table-striped table-hover" >
-                                    <thead>
-                                    <tr>
-                                        <th id="tt" className="date">Budget</th>
-                                        <th id="tt">Task</th>
-                                        <th id="tt" className="supplied">%</th>
-                                        <th id="tt">End Date</th>
 
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td id="tt" className="date">100</td>
-                                        <td id="tt">Painting</td>
-                                        <td id="tt" className="supplied">100</td>
-                                        <td id="tt">1-2-2017</td>
-
+                        <div className="col-md-4 col-xs-12 bb">
+                            <div className="desc-b">Ongoing Tasks With Budget</div>
+                            <div className="table-responsive ">
+                                <table className="table ">
+                                    <tr className="th-ogtwb">
+                                        <th className="th-b-t">Task</th>
+                                        <th className="th-b">Budget</th>
+                                        <th className="th-b-pc">%</th>
+                                        <th className="th-b">End Date</th>
                                     </tr>
 
                                     <tr>
-                                        <td id="tt" className="date">200</td>
-                                        <td id="tt">Foundation digging</td>
-                                        <td id="tt" className="supplied">100</td>
-                                        <td id="tt">1-2-2017</td>
-
+                                        <td>Roofing</td>
+                                        <td>5,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:85+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
                                     </tr>
 
                                     <tr>
-                                        <td id="tt" className="date">300</td>
-                                        <td id="tt">Block laying</td>
-                                        <td id="tt" className="supplied">100</td>
-                                        <td id="tt">1-2-2017</td>
-
+                                        <td>Plasterin</td>
+                                        <td>5,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-danger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:40+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
                                     </tr>
 
+                                    <tr>
+                                        <td>Plumbing</td>
+                                        <td>3000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:70+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Framing</td>
+                                        <td>2,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-warning pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:60+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
+
+                                    <tfoot >
+                                    <tr className="">
+                                        <th ></th>
+                                        <th className="tf-b">
+                                            Ghc15,000</th>
+                                        <th ></th>
+                                        <th ></th>
+                                    </tr>
+                                    </tfoot>
 
 
-                                    </tbody>
+
+
                                 </table>
 
                             </div>
                         </div>
-                        <div className="col-md-4 col-xs-12" id="budget-comp"><span className="bh3">Nearly Completed Tasks With Budget</span>
-                            <div className="table-responsive">
-                                <table className="table table-striped table-hover" >
-                                    <thead>
-                                    <tr>
-                                        <th id="tt" className="date">Budget</th>
-                                        <th id="tt">Task</th>
-                                        <th id="tt" className="supplied">%</th>
-                                        <th id="tt">End Date</th>
-
-                                    </tr>
-                                    </thead>
-                                    <tbody>
 
 
-
-                                    </tbody>
-                                </table>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
-
-
-
-
-
 
 
             </div>
