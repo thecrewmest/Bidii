@@ -63,17 +63,18 @@ let ProjectBody = React.createClass({
     },
     render() {
         return (
-            <div className="container p-l-100">
+            <div className="container" id="projectBodyDiv">
                 {/* Creating a new project */}
                 <NewProjectModal handleCreateProject={this.handleCreateProject} />
 
                 {/* Projects Item*/}
                 <div className="row">
+
                     {/* Toggle Add New Project */}
                     <a href="#newProject" data-toggle="modal">
-                        <div id="add_proj" className="col-md-3">
-                            <span className="genicon-add-circle genicon-add-project"></span> <br />
-                            <span>Add a new project</span>
+                        <div className="col-md-3 col-xs-12 col-ms-12 project-item1">
+                            <span className="genicon-add-circle addcircle"></span>
+                            <span className="addProject my-fonts f-r">Add a project</span>
                         </div>
                     </a>
 

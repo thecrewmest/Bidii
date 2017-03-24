@@ -62,22 +62,29 @@
   height: 150px;
   width: 150px;
   background: $light-blue;
-  background-image: url('/assets/CollaboratorDefaultImage.png');
+  background-image: url(<%= asset_path('CollaboratorDefaultImage.png') %>);
   background-repeat: no-repeat;
-  /*background-position: center;*/
-  background-size: cover;
+  background-size: contain;
   border-radius: 110px;
   margin-left: 20%;
 }
+
+.cc1 {
+  background-image: url(<%= asset_path('collaborator4.jpeg') %>);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 .cc4{
   height: 150px;
   width: 150px;
   background: $light-blue;
-  background-image: url('/assets/collaborator3.jpeg');
+  background-image: url(<%= asset_path('collaborator3.jpeg') %>);
   background-repeat: no-repeat;
-  background-position: center;
+  /*background-position: center;*/
+  background-size: contain;
   border-radius: 110px;
 }
 

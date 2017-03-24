@@ -5,7 +5,7 @@ const TaskTab = React.createClass({
                 <div className="row">
                     <div className="col-sm-9">
 
-                        <a className="add-task" href="#" title="Add Task">
+                        <a className="add-task" href="#newTask" data-toggle="modal" title="Add Task">
                             <span className="genicon-task-hammer-plus add-task-hammer ic"></span>
                         </a>
 

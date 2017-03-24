@@ -39,33 +39,32 @@ let ProjectItem = React.createClass({
         }
 
         return(
-            <div className="col-md-3" id="project1">
-                <div id="project_pic_div" style={image}>
-                    <a href={"#editProject" + project.id} data-toggle="modal"
-                       className="edit-a">
-                        <img src="<%= asset_path('edit-icon.png') %>" id="edit-icon"/>
-                    </a>
 
-                    <div className="progressbar_div" id="pbarDiv">
-                        <div className={`progress progress-sm ${getProgress(progress)}`}  id="progressbarGreen"
-                             role="progressbar" aria-valuenow="40"
-                             aria-valuemin="0" aria-valuemax="100%"
-                             style={{width: progress == null? 1 + '%' : progress + '%'}}>
-                        </div>
-                    </div>
-
-                    <div className="p-content">
-                        <span className="pull-left p-content-title">{project.title}</span>
-                        <span className="pull-right p-content-progress">
-                            {progress == null ? '0%' : progress + '%'}
-                        </span>
-                    </div>
+            <div className="col-md-3 col-xs-12 col-ms-12 project-item">
+              <div className="circle-edit-project">
+                <a href={"#editProject" + project.id} data-toggle="modal" className="edit-project-a">
+                  <span className="genicon-pencil-boxed-compact edit-icon-project "></span>
+                </a>
+              </div>
+              <div className="col-md-12 col-xs-12 col-ms-12 progressbar-div">
+                <div className={`progress progress-sm pbar-border-radius ${getProgress(progress)}`}
+                     role="progressbar" aria-valuenow="80"
+                     aria-valuemin="0" aria-valuemax="100%"
+                     style={{width: progress == null? 1 + '%' : progress + '%', height: 15 + 'px'}}>
                 </div>
+              </div>
+              <div className="project-details">
+                <span className="pull-left project-name my-fonts f-r">{project.title}</span>
+                <span className=" pull-right project-percentage-complete-green f-r ">
+                  {progress == null ? '0%' : progress + '%'}
+                  <span className="percentage f-r">%</span>
+                </span>
+              </div>
 
-                <EditProjectModal pitem={this.props.project}
-                                  handleEdit={this.props.handleEdit}
-                                  handleUpdate={this.onUpdate}
-                                  editHandleDelete={this.projectItemHandleDelete} />
+              <EditProjectModal pitem={this.props.project}
+                                handleEdit={this.props.handleEdit}
+                                handleUpdate={this.onUpdate}
+                                editHandleDelete={this.projectItemHandleDelete} />
 
             </div>
         )

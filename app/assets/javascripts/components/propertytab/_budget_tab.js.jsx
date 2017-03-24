@@ -1,25 +1,44 @@
 var BudgetTab = React.createClass({
     render() {
         return (
-            <div className="col-sm-12 col-xs-12 budget-tab" >
+            <div className="col-sm-12 task-tab topbar">
+                <div className="row">
+                    <div className="col-sm-9">
 
-                    <div className="col-md-4 col-xs-12">
-                    <span className="project-budget">
-                        <span className="genicon-info-circle info-total-budget "></span>
-                        Total Project Budget: Ghc40,000
-                    </span>
+
+                        <a className="btn btn-task-color " title="Print Tasks">
+                            <span className="genicon-printer-compact printer ic"/>
+                        </a>
+
+                        <a className="btn btn-task-color " title="Export CSV">
+                            <span className="genicon-harddrive-download-compact hardrive ic"/>
+                        </a>
+
+                        <a className="btn btn-task-color downloads-export" title="Download pdf">
+                            <span className="genicon-file-pdf pdf-task ic"/>
+                        </a>
+
+                        <a className="btn btn-task-color downloads-export" title="Download word">
+                            <span className="genicon-file-word  word-task ic"/>
+                        </a>
                     </div>
 
 
-                    <div className="col-md-3 col-xs-12">
-                    <span className="project-budget">
-                        <span className="genicon-info-circle info-budget-remaing "></span>
-                        Budget Remaining: Ghc10,000
-                    </span>
-            </div>
 
 
 
+                    <a href="#accordion" className="task-filter">
+                        <span className="genicon-funnel-caret-compact funnel"></span>
+                    </a>
+                    <div className="col-sm-3 text-right search-div">
+                        <div className=" pull-rightcol-md-9">
+                            <span className="genicon-magnify magnify magnify-task pull-right"></span>
+                            <input className="search-task search"  placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;search task"/>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
   root to: 'site#index'
 
   get '/dashboard', to: 'app#index'
@@ -32,12 +32,12 @@ Rails.application.routes.draw do
 
   get '/forgot_password', to: 'sessions#forgot_password'
 
-
-  # API Endpoints
   namespace :api do
     namespace :v1 do
       resources :projects, only: [:index, :create, :destroy, :update]
-      get '/archived', to: 'api/v1/projects#archived'
+      get '/archived', to: '/api/v1/projects#archived'
     end
   end
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

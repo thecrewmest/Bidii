@@ -98,7 +98,7 @@ let ProjectBodyDuplicate = React.createClass({
                                <div className="panel-heading archived-projects-according-heading">
                                    <h4 className="panel-title">
                                        <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                          href="#collapseOne"  style={{background:'#D8DDE6',}}>
+                                          href="#collapseOne"  style={{background:'#D8DDE6'}}>
                                            <i className="icon-arrow"></i>
                                            <span className="my-fonts f-r">Archived Projects</span>
                                        </a>

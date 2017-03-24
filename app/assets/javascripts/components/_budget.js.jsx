@@ -1,7 +1,7 @@
 const Budget = React.createClass({
     render() {
         return(
-            <div>
+            <div style={{background:'white'}}>
 
                 <div classNameName="navbar navbar-inverse navbar-fixed-top">
                     <div>
@@ -12,11 +12,26 @@ const Budget = React.createClass({
                 </div>
 
 
+                <div className="col-md-12 col-xs-12 info-panel pull-left">
+                    <div className="col-md-4 col-xs-12">
+                        <span className="project-budget">
+                            <span className="genicon-info-circle info-total-budget "></span>
+                            Total Project Budget: Ghc70,000
+                        </span>
+                    </div>
 
+
+                    <div className="col-md-4 col-xs-12">
+                        <span className="project-budget">
+                            <span className="genicon-info-circle info-budget-remaing "></span>
+                            Budget Remaining: Ghc30,000
+                        </span>
+                    </div>
+                </div>
 
                 <table className="table-responsive budget-table">
                     <tbody className="tb">
-                        <tr budger-row>
+                        <tr className="budget-row">
                             <td className="budget-td-1">
                                 <div className="budget-circle">
                                     <h4>GhC</h4>
@@ -100,28 +115,19 @@ const Budget = React.createClass({
 
                         <div className="col-md-4 col-xs-12 bb">
                             <div className="desc-b">Task With Budget</div>
-                            <div className="table-responsive ">
-                                <table className="">
-                                    <thead>
-                                    <tr>
-                                        <th className="th-b">Task</th>
+                            <div className="table-responsive table-twb">
+                                <table className="table ">
+                                    <tr className="row-twb">
+                                        <th className="th-b-t">Task</th>
                                         <th className="th-b">Budget</th>
-                                        <th className="th-b">%</th>
-                                        <th  className="th-b">End Date</th>
+                                        <th className="th-b-pc">%</th>
+                                        <th className="th-b">End Date</th>
                                     </tr>
-                                    </thead>
-                                    <tbody>
 
                                     <tr>
+                                        <td>Foundation</td>
+                                        <td>4,000</td>
                                         <td>
-                                            Site clearing
-                                        </td>
-
-                                        <td >
-                                            400
-                                        </td>
-
-                                        <td className="task-td">
                                             <div className= "task-progress-bar-div">
                                                 <div className="progress progress-sm  progress-bar-success pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
@@ -130,24 +136,28 @@ const Budget = React.createClass({
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
 
                                     <tr>
+                                        <td>Dredging</td>
+                                        <td>6,000</td>
                                         <td>
-                                            Site clearing
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-danger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:0+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
                                         </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
 
-                                        <td >
-                                            400
-                                        </td>
-
-                                        <td className="task-td">
+                                    <tr>
+                                        <td>Block laying</td>
+                                        <td>30,000</td>
+                                        <td>
                                             <div className= "task-progress-bar-div">
                                                 <div className="progress progress-sm  progress-bar-success pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
@@ -156,178 +166,96 @@ const Budget = React.createClass({
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-05-01</td>
                                     </tr>
 
                                     <tr>
+                                        <td>Plastering</td>
+                                        <td>1000</td>
                                         <td>
-                                            Foundation
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-warning pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:50+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
                                         </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
 
-                                        <td >
-                                            400
+                                    <tr>
+                                        <td>Framing</td>
+                                        <td>13,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-danger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:30+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
                                         </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
 
-                                        <td className="task-td">
+                                    <tr>
+                                        <td>Plumbing</td>
+                                        <td>4000</td>
+                                        <td>
                                             <div className= "task-progress-bar-div">
                                                 <div className="progress progress-sm  progress-bar-success pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
                                                      aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:100+'%',height:13+'px'}}>
+                                                     style={{width:70+'%',height:13+'px'}}>
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td>
-                                            Foundation
-                                        </td>
-
-                                        <td >
-                                            400
-                                        </td>
-
-                                        <td className="task-td">
-                                            <div className= "task-progress-bar-div">
-                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
-                                                     role="progressbar" aria-valuenow="80"
-                                                     aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:100+'%',height:13+'px'}}>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
-                                    </tr>
-
-
-                                    <tr>
-                                        <td>
-                                            Foundation
-                                        </td>
-
-                                        <td >
-                                            400
-                                        </td>
-
-                                        <td className="task-td">
-                                            <div className= "task-progress-bar-div">
-                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
-                                                     role="progressbar" aria-valuenow="80"
-                                                     aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:100+'%',height:13+'px'}}>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td>
-                                            Foundation
-                                        </td>
-
-                                        <td >
-                                            400
-                                        </td>
-
-                                        <td className="task-td">
-                                            <div className= "task-progress-bar-div">
-                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
-                                                     role="progressbar" aria-valuenow="80"
-                                                     aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:100+'%',height:13+'px'}}>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
-                                    </tr>
-
-
-                                    <tr>
-                                        <td>
-                                            Dredging
-                                        </td>
-
-                                        <td >
-                                            1500
-                                        </td>
-
-                                        <td className="task-td">
-                                            <div className= "task-progress-bar-div">
-                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
-                                                     role="progressbar" aria-valuenow="80"
-                                                     aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:100+'%',height:13+'px'}}>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
 
                                     <tr>
+                                        <td>Furnishing</td>
+                                        <td>12000</td>
                                         <td>
-                                            Bending
-                                        </td>
-
-                                        <td >
-                                            1200
-                                        </td>
-
-                                        <td className="task-td">
                                             <div className= "task-progress-bar-div">
-                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                <div className="progress progress-sm  progress-bar-danger pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
                                                      aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:100+'%',height:13+'px'}}>
+                                                     style={{width:3+'%',height:13+'px'}}>
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
 
+                                    <tr>
+                                        <td>Roofing</td>
+                                        <td>5000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-damger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:40+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
 
-                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th ></th>
+                                        <th className="tf-b">
+                                            Ghc70,000</th>
+                                        <th ></th>
+                                        <th ></th>
+                                    </tr>
+                                    </tfoot>
+
+
+
 
                                 </table>
                             </div>
@@ -337,27 +265,18 @@ const Budget = React.createClass({
                         <div className="col-md-4 col-xs-12 bb">
                             <div className="desc-b">Completed Tasks With Budget</div>
                             <div className="table-responsive ">
-                                <table className="">
-                                    <thead>
+                                <table className="table ">
                                     <tr>
-                                        <th className="th-b">Task</th>
+                                        <th className="th-b-t">Task</th>
                                         <th className="th-b">Budget</th>
-                                        <th className="th-b">%</th>
-                                        <th  className="th-b">End Date</th>
+                                        <th className="th-b-pc">%</th>
+                                        <th className="th-b">End Date</th>
                                     </tr>
-                                    </thead>
-                                    <tbody>
 
                                     <tr>
+                                        <td>Foundation</td>
+                                        <td>2,000</td>
                                         <td>
-                                            Site clearing
-                                        </td>
-
-                                        <td >
-                                            400
-                                        </td>
-
-                                        <td className="task-td">
                                             <div className= "task-progress-bar-div">
                                                 <div className="progress progress-sm  progress-bar-success pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
@@ -366,23 +285,13 @@ const Budget = React.createClass({
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
+
                                     <tr>
+                                        <td>Fencing</td>
+                                        <td>1,000</td>
                                         <td>
-                                            Foundation
-                                        </td>
-
-                                        <td >
-                                            400
-                                        </td>
-
-                                        <td className="task-td">
                                             <div className= "task-progress-bar-div">
                                                 <div className="progress progress-sm  progress-bar-success pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
@@ -391,23 +300,13 @@ const Budget = React.createClass({
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
+
                                     <tr>
+                                        <td>Block laying</td>
+                                        <td>30,000</td>
                                         <td>
-                                            Dredging
-                                        </td>
-
-                                        <td >
-                                            1500
-                                        </td>
-
-                                        <td className="task-td">
                                             <div className= "task-progress-bar-div">
                                                 <div className="progress progress-sm  progress-bar-success pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
@@ -416,24 +315,13 @@ const Budget = React.createClass({
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
 
                                     <tr>
+                                        <td>Bending</td>
+                                        <td>2,000</td>
                                         <td>
-                                            Bending
-                                        </td>
-
-                                        <td >
-                                            1200
-                                        </td>
-
-                                        <td className="task-td">
                                             <div className= "task-progress-bar-div">
                                                 <div className="progress progress-sm  progress-bar-success pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
@@ -442,46 +330,72 @@ const Budget = React.createClass({
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
 
+                                    <tfoot>
+                                    <tr>
+                                        <th ></th>
+                                        <th className="tf-b">
+                                            Ghc35,000</th>
+                                        <th ></th>
+                                        <th ></th>
+                                    </tr>
+                                    </tfoot>
 
-                                    </tbody>
+
+
 
                                 </table>
+
                             </div>
                         </div>
 
                         <div className="col-md-4 col-xs-12 bb">
-                            <div className="desc-b">On</div>
+                            <div className="desc-b">Ongoing Tasks With Budget</div>
                             <div className="table-responsive ">
-                                <table className="">
-                                    <thead>
-                                    <tr>
-                                        <th className="th-b">Task</th>
+                                <table className="table ">
+                                    <tr className="th-ogtwb">
+                                        <th className="th-b-t">Task</th>
                                         <th className="th-b">Budget</th>
-                                        <th className="th-b">%</th>
-                                        <th  className="th-b">End Date</th>
+                                        <th className="th-b-pc">%</th>
+                                        <th className="th-b">End Date</th>
                                     </tr>
-                                    </thead>
-                                    <tbody>
-
 
                                     <tr>
+                                        <td>Roofing</td>
+                                        <td>5,000</td>
                                         <td>
-                                            Site clearing
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:85+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
                                         </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
 
-                                        <td >
-                                            1000
+                                    <tr>
+                                        <td>Plasterin</td>
+                                        <td>5,000</td>
+                                        <td>
+                                            <div className= "task-progress-bar-div">
+                                                <div className="progress progress-sm  progress-bar-danger pbar-dynamic"
+                                                     role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100%"
+                                                     style={{width:40+'%',height:13+'px'}}>
+                                                </div>
+                                            </div>
                                         </td>
+                                        <td>2017-02-01</td>
+                                    </tr>
 
-                                        <td className="task-td">
+                                    <tr>
+                                        <td>Plumbing</td>
+                                        <td>3000</td>
+                                        <td>
                                             <div className= "task-progress-bar-div">
                                                 <div className="progress progress-sm  progress-bar-success pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
@@ -490,95 +404,39 @@ const Budget = React.createClass({
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
+
                                     <tr>
+                                        <td>Framing</td>
+                                        <td>2,000</td>
                                         <td>
-                                            Site clearing
-                                        </td>
-
-                                        <td >
-                                            1000
-                                        </td>
-
-                                        <td className="task-td">
                                             <div className= "task-progress-bar-div">
-                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
+                                                <div className="progress progress-sm  progress-bar-warning pbar-dynamic"
                                                      role="progressbar" aria-valuenow="80"
                                                      aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:70+'%',height:13+'px'}}>
+                                                     style={{width:60+'%',height:13+'px'}}>
                                                 </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Site clearing
-                                        </td>
-
-                                        <td >
-                                            1000
-                                        </td>
-
-                                        <td className="task-td">
-                                            <div className= "task-progress-bar-div">
-                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
-                                                     role="progressbar" aria-valuenow="80"
-                                                     aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:70+'%',height:13+'px'}}>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Site clearing
-                                        </td>
-
-                                        <td >
-                                            1000
-                                        </td>
-
-                                        <td className="task-td">
-                                            <div className= "task-progress-bar-div">
-                                                <div className="progress progress-sm  progress-bar-success pbar-dynamic"
-                                                     role="progressbar" aria-valuenow="80"
-                                                     aria-valuemin="0" aria-valuemax="100%"
-                                                     style={{width:70+'%',height:13+'px'}}>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            2017-01-02
-                                        </td>
-
-
+                                        <td>2017-02-01</td>
                                     </tr>
 
+                                    <tfoot >
+                                    <tr className="">
+                                        <th ></th>
+                                        <th className="tf-b">
+                                            Ghc15,000</th>
+                                        <th ></th>
+                                        <th ></th>
+                                    </tr>
+                                    </tfoot>
 
 
 
-                                    </tbody>
 
                                 </table>
+
                             </div>
                         </div>
 

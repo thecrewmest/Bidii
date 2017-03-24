@@ -39,7 +39,7 @@ const Overview = React.createClass({
                                 </div>
                                 <p className="overview-task-in-progress my-fonts">
                                     <span className="genicon-manatwork manatwork icon"></span>
-                                    <span className="pbar-descriptions">
+                                    <span className="pbar-descriptions" style={{fontFamily: 'Roboto', fontSize: 15+'px'}}>
                                         In progress:(4 tasks ongoing, 50%)
                                     </span>
                                 </p>
@@ -53,7 +53,7 @@ const Overview = React.createClass({
                                 </div>
                                 <p className="overview-task-in-progress my-fonts">
                                     <span className="genicon-flag flag icon"></span>
-                                     <span className="pbar-descriptions"> Behind: (1 task, 0%)</span>
+                                     <span className="pbar-descriptions" style={{fontFamily: 'Roboto', fontSize: 15+'px'}}> Behind: (1 task, 0%)</span>
                                 </p>
 
                                 <div className="overview-progressbar-div">
@@ -65,7 +65,7 @@ const Overview = React.createClass({
                                 </div>
                                 <p className="overview-task-in-progress my-fonts">
                                     <span className="genicon-exclamation exclamation icon"></span>
-                                    <span className="pbar-descriptions">
+                                    <span className="pbar-descriptions" style={{fontFamily: 'Roboto', fontSize: 15+'px'}}>
                                         Late/problematic:(1 task, 0%)
                                     </span>
                                 </p>

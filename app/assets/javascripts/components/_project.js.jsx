@@ -7,8 +7,8 @@ let Project = React.createClass({
                 </div>
 
                 <div className="main-container">
-                    {/*<ProjectBody />*/}
-                    <ProjectBodyDuplicate />
+                    <ProjectBody />
+                    {/*<ProjectBodyDuplicate />*/}
                 </div>
             </div>
         )

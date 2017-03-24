@@ -4,35 +4,47 @@ let AllArchivedProjects = React.createClass({
 
         let archivedProjects = this.props.archivedItems.map((project) => {
             return (
-                <div key={project.id} className="col-sm-12" id="archieved_list">
-                    <div id="archieved_projects_details_name" className="col-sm-3">{project.title}</div>
-                    <div className="col-sm-3">{project.budget.toString()}</div>
-                    <div id="archieved_projects_details" className="col-sm-3">Archived: <span
-                        className="arc-red">{project.created_at}</span></div>
-                    <div id="archieved_projects_details" className="col-sm-3">
-                        <button type="button" className="btn btn-sm btn-primary bidii-btn-primary">Restore</button>
-                    </div>
-                </div>
+                <tr>
+                    <td className="archived-table-td th-td-name">{project.title}</td>
+                    <td className="archived-table-td">{'GHC'+ project.budget.toString()}</td>
+                    <td className="archived-table-td">
+                        <span className="archived-red">Archived:</span> {project.created_at}</td>
+                    <td className="archived-table-td td-action">
+                        <div className="restore-archive">Restore</div>
+                    </td>
+                </tr>
             )
         });
 
 
         return (
             <div className="row">
-                <div className="panel-group accordion-custom" id="accordion">
-                    <div className="panel panel-default">
-                        <div className="panel-heading">
-                            <h4 className="panel-title">
-                                <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                   href="#collapseOne">
-                                    <i className="icon-arrow"></i>
-                                    Archived Projects
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" className="panel-collapse collapse">
-                            <div className="panel-body">
-                                {archivedProjects}
+                <div className="col-sm-12 p-l-r-20">
+                    <div className="panel-group accordion-custom" id="accordion">
+                        <div className="panel panel-default" id="accordionBody">
+                            <div className="panel-heading archived-projects-according-heading">
+                                <h4 className="panel-title">
+                                    <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseOne" style={{background:'#D8DDE6'}}>
+                                        <i className="icon-arrow"></i>
+                                        <span className="my-fonts f-r">Archived Projects</span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" className="panel-collapse collapse">
+                                <table className="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th className="archived-table-th th-td-name">Project name</th>
+                                            <th className="archived-table-th">Budget</th>
+                                            <th className="archived-table-th">Date archived</th>
+                                            <th className="archived-table-th">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {archivedProjects}
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

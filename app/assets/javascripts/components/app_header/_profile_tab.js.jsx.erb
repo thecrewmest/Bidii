@@ -3,8 +3,8 @@ var ProfileTab = React.createClass({
         return(
             <li className="dropdown current-user">
                 <a data-toggle="dropdown" data-hover="dropdown" className="dropdown-toggle" data-close-others="true" href="#">
-                    <img src="<%= asset_path('photo.jpg') %>" className="circle-img" alt="" />
-                        <span className="username">John Muruiki</span>
+                    <img src="<%= asset_path('photo.jpg') %>" width="30" height="30" className="circle-img" alt="" />
+                        <span className="username" style={{fontFamily: 'Roboto', fontStyle: 'normal', fontSize: 14+'px'}}> John Muruiki</span>
                         <i className="clip-chevron-down" />
                 </a>
                 <ul className="dropdown-menu">
@@ -15,10 +15,10 @@ var ProfileTab = React.createClass({
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <i className="clip-phone"></i> &nbsp;0547558472
+                            <i className="clip-phone"  /> &nbsp;0547558472
                         </a>
                          <a href="javascript:void(0)">
-                             <i className="clip-archive"></i> &nbsp;The Crew
+                             <i className="clip-archive" /> &nbsp;The Crew
                          </a>
                         <li>
                             <a href="javascript:void(0)">

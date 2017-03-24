@@ -2,7 +2,7 @@ var Notification = React.createClass({
     render() {
         return(
             <li className="dropdown">
-                <a data-toggle="dropdown" data-hover="dropdown" className="dropdown-toggle" data-close-others="true" href="#">
+                <a data-toggle="dropdown" data-hover="dropdown" className="dropdown-toggle notify" data-close-others="true" href="#">
                     <i className="clip-notification-2"></i>
                     <span className="badge"> 4</span>
                 </a>

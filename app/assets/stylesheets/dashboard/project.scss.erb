@@ -1,10 +1,12 @@
 @import 'colors';
 
+#projectBodyDiv a {
+  cursor: pointer;
+}
+
 .project-breadcrumb {
   margin-top: 5px;
 }
-
-
 #logo{
   height:30px;
   width: 70px;
@@ -39,7 +41,7 @@
   height: 300px;
   background: #D8DDE6;
   border: 25px solid $white;
-  background-image: url(/assets/project-default.png);
+  background-image: url(<%= asset_path('project-default.png') %>);
   background-position: 50% 40%;
   background-repeat: no-repeat;
   background-size: 68px 54px;
