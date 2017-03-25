@@ -56,7 +56,7 @@ let ProjectItem = React.createClass({
               <div className="project-details">
                 <span className="pull-left project-name my-fonts f-r">{project.title}</span>
                 <span className=" pull-right project-percentage-complete-green f-r ">
-                  {progress == null ? '0%' : progress + '%'}
+                  {progress == null ? '0' : progress}
                   <span className="percentage f-r">%</span>
                 </span>
               </div>
