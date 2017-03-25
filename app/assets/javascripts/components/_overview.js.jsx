@@ -22,7 +22,7 @@ const Overview = React.createClass({
                             </div>
 
                             <p className="project-t my-fonts">Project</p>
-                            <p className="project-n my-fonts">Sandcity</p>
+                            <p className="project-n my-fonts">Sandcity Hostel</p>
                             <p className="days-remaining-number my-fonts">45</p>
                             <p className="days-remaining-text my-fonts">Days remaining</p>
                                 <hr className="line"/>

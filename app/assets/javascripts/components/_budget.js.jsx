@@ -12,19 +12,19 @@ const Budget = React.createClass({
                 </div>
 
 
-                <div className="col-md-12 col-xs-12 info-panel pull-left">
+                <div className="col-md-12 col-xs-12 info-panel pull-left" style={{marginTop: 15+'px', marginBottom: 15+'px'}}>
                     <div className="col-md-4 col-xs-12">
-                        <span className="project-budget">
-                            <span className="genicon-info-circle info-total-budget "></span>
-                            Total Project Budget: Ghc70,000
+                        <span className="project-budget" style={{fontFamily: 'Roboto'}}>
+                            <span className="genicon-info-circle info-total-budget " style={{color: '#494545', verticalAlign: 'text-top', fontSize: 20+'px'}}></span>
+                            Total Project Budget: GHC 70000.00
                         </span>
                     </div>
 
 
                     <div className="col-md-4 col-xs-12">
-                        <span className="project-budget">
-                            <span className="genicon-info-circle info-budget-remaing "></span>
-                            Budget Remaining: Ghc30,000
+                        <span className="project-budget" style={{fontFamily: 'Roboto'}}>
+                            <span className="genicon-info-circle info-budget-remaing " style={{color: '#494545', verticalAlign: 'text-top', fontSize: 20+'px'}}></span>
+                            Budget Remaining: GHC 30000.00
                         </span>
                     </div>
                 </div>
@@ -34,8 +34,8 @@ const Budget = React.createClass({
                         <tr className="budget-row">
                             <td className="budget-td-1">
                                 <div className="budget-circle">
-                                    <h4>GhC</h4>
-                                    <h3>40,000</h3>
+                                    <h4>GHC</h4>
+                                    <h3>40000.00</h3>
                                 </div>
                             </td>
 
@@ -45,8 +45,8 @@ const Budget = React.createClass({
 
                             <td className="budget-td-3">
                                 <div className="budget-circle">
-                                    <h4>GhC</h4>
-                                    <h3>35,000</h3>
+                                    <h4>GHC</h4>
+                                    <h3>35000.00</h3>
                                 </div>
                             </td>
 
@@ -56,8 +56,8 @@ const Budget = React.createClass({
 
                             <td className="budget-td-5">
                                 <div className="budget-circle">
-                                    <h4>GhC</h4>
-                                    <h3>15,000</h3>
+                                    <h4>GHC</h4>
+                                    <h3>15000.00</h3>
                                 </div>
                             </td>
 
@@ -67,8 +67,8 @@ const Budget = React.createClass({
 
                             <td className="budget-td-7">
                                 <div className="budget-circle">
-                                    <h4>GhC</h4>
-                                    <h3>0,000</h3>
+                                    <h4>GHC</h4>
+                                    <h3>0.00</h3>
                                 </div>
                             </td>
                         </tr>

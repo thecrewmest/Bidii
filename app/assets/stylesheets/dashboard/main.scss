@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700');
 @import 'common';
 
+.progress {
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
 
+a {
+  color: #979797;
+  text-decoration: none;
+}
+
+
+.task-table > tbody > tr > td {
+  padding: 4px 0;
+}
 
 body.bg_style_3 {
     background: url(bg_3.png)!important
@@ -29,6 +43,8 @@ html, body {
 .dropdown-toggle .notify i {
   color: #979797;
 }
+
+
 
 
 

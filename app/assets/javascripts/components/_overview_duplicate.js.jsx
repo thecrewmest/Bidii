@@ -13,15 +13,15 @@ const Overview = React.createClass({
 
                 {/*Sidebar and content*/}
 
-                <div className=" side-bar-and-content">
+                <div className="side-bar-and-content">
                     <div className="roew">
                         {/*sidebar*/}
-                        <div className="col-md-3 col-xs-12 col-sm-12 side-bar">
+                        <div className="col-md-3 col-xs-12 col-sm-12 side-bar" >
                             <div className="col-md-12 status-and-icon my-fonts">
                                 <span className="status pull-left">Status</span>
                                 <span className="genicon-barchart pull-right"></span>
-                                <p className="project-t my-fonts">Project</p>
-                                <p className="project-n my-fonts">Sandcity</p>
+                                <p className="project-t my-fonts" style={{marginTop: 20+'px'}}>Project</p>
+                                <p className="project-n my-fonts" style={{marginBottom: 25+'px'}}>Sandcity Hostel</p>
                                 <p className="days-remaining-number my-fonts">45</p>
                                 <p className="days-remaining-text my-fonts">Days remaining</p>
                                 <hr className="line"/>
@@ -101,7 +101,7 @@ const Overview = React.createClass({
                                     <td className="task-ongoing">Roofing</td>
                                     <td className="archived-table-td ">
                                         <span className="genicon-manatwork manatwork "></span>
-                                        <span>
+                                        <span style={{fontFamily: 'Roboto'}}>
                                              90%
                                         </span>
                                     </td>
@@ -112,8 +112,8 @@ const Overview = React.createClass({
                                         <div className="assignee-circle">
                                             <span className="genicon-person"></span>
                                         </div>
-                                        <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
+                                        <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                            &nbsp;Vansolo
                                         </span>
                                     </td>
                                 </tr>
@@ -129,7 +129,7 @@ const Overview = React.createClass({
                                     </td>
                                     <td className="task-ongoing">
                                         <span className="genicon-manatwork manatwork "></span>
-                                        <span >
+                                        <span style={{fontFamily: 'Roboto'}}>
                                             70%
                                         </span>
                                     </td>
@@ -140,8 +140,8 @@ const Overview = React.createClass({
                                         <div className="assignee-circle">
                                             <span className="genicon-person"></span>
                                         </div>
-                                        <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;&nbsp;Joseph
+                                        <span className="assignee-name-to"  style={{fontFamily: 'Roboto'}}>
+                                            &nbsp;Joseph
                                         </span>
                                     </td>
                                 </tr>
@@ -157,7 +157,7 @@ const Overview = React.createClass({
                                     </td>
                                     <td className="task-ongoing">
                                         <span className="genicon-exclamation exclamation "></span>
-                                        <span >
+                                        <span style={{fontFamily: 'Roboto'}}>
                                              50%
                                         </span>
                                     </td>
@@ -168,8 +168,8 @@ const Overview = React.createClass({
                                         <div className="assignee-circle">
                                             <span className="genicon-person"></span>
                                         </div>
-                                        <span className="assignee-name-t0">
-                                           &nbsp; &nbsp;&nbsp;Kelvin
+                                        <span className="assignee-name-t0"  style={{fontFamily: 'Roboto'}}>
+                                           &nbsp;Kelvin
                                         </span>
                                     </td>
                                 </tr>
@@ -185,7 +185,7 @@ const Overview = React.createClass({
                                     </td>
                                     <td className="task-ongoing">
                                         <span className="genicon-calendar-empty "></span>
-                                        <span>
+                                        <span style={{fontFamily: 'Roboto'}}>
                                             &nbsp;90%
                                         </span>
                                     </td>
@@ -196,8 +196,8 @@ const Overview = React.createClass({
                                         <div className="assignee-circle">
                                             <span className="genicon-person"></span>
                                         </div>
-                                        <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;&nbsp;Kelvin
+                                        <span className="assignee-name-to"  style={{fontFamily: 'Roboto'}}>
+                                            &nbsp;&nbsp;Kelvin
                                         </span>
                                     </td>
                                 </tr>
@@ -208,7 +208,7 @@ const Overview = React.createClass({
 
 
                             {/*Tasks completed table*/}
-                            <p className=" pull-left four-tasks-ongoing">
+                            <p className=" pull-left four-tasks-ongoing" style={{marginTop: 25+'px'}}>
                                 <span className="genicon-task-hammer darker-grey-hammer"></span>
                                 4 tasks completed
                             </p>
@@ -230,11 +230,11 @@ const Overview = React.createClass({
                                         Foundation digging
                                     </td>
                                     <td className="task-completed-td">
-                                        1/Jan/2016
+                                        1-Jan-2016
                                     </td>
                                     <td className="task-completed-td">
                                         <span className="genicon-tick-dotted tick-dotted ticks"></span>
-                                        15/Jan/2016
+                                        15-Jan-2016
                                     </td>
                                     <td className="task-completed-td">
                                          14 days
@@ -243,7 +243,7 @@ const Overview = React.createClass({
                                         <div className="assignee-circle">
                                             <span className="genicon-person"></span>
                                         </div>
-                                        <span className="assignee-name overview-person">
+                                        <span className="assignee-name overview-person" style={{fontFamily: 'Roboto'}}>
                                             Joseph
                                         </span>
                                     </td>
@@ -255,21 +255,21 @@ const Overview = React.createClass({
                                         Fencing
                                     </td>
                                     <td className="task-completed-td">
-                                        3/Feb/2016
+                                        3-Feb-2016
                                     </td>
                                     <td className="task-completed-td">
                                         <span className="genicon-tick-solid tick-solid ticks"></span>
-                                        1/March/2016
+                                        1-Mar-2016
                                     </td>
                                     <td className="task-completed-td">
-                                        18days
+                                        27 days
                                     </td>
                                     <td className="task-completed-td td-assignee">
                                         <div className="assignee-circle">
                                             <span className="genicon-person"></span>
                                         </div>
-                                        <span className="assignee-name">
-                                            Erickso
+                                        <span className="assignee-name"  style={{fontFamily: 'Roboto'}}>
+                                            Kelvin
                                         </span>
                                     </td>
                                 </tr>
@@ -280,11 +280,11 @@ const Overview = React.createClass({
                                         Block laying
                                     </td>
                                     <td className="task-completed-td">
-                                        1/Jan/2016
+                                        1-Jan-2016
                                     </td>
                                     <td className="task-completed-td">
                                         <span className="genicon-tick-solid tick-solid ticks"></span>
-                                        1/Jan/2016
+                                        1-Mar-2016
                                     </td>
                                     <td className="task-completed-td">
                                         2 months
@@ -293,7 +293,7 @@ const Overview = React.createClass({
                                         <div className="assignee-circle">
                                             <span className="genicon-person"></span>
                                         </div>
-                                        <span className="assignee-name">
+                                        <span className="assignee-name"  style={{fontFamily: 'Roboto'}}>
                                             Duncan
                                         </span>
                                     </td>
@@ -305,21 +305,21 @@ const Overview = React.createClass({
                                         Bending
                                     </td>
                                     <td className="task-completed-td">
-                                        1/Jan/2016
+                                        1-Jan-2016
                                     </td>
                                     <td className="task-completed-td">
                                         <span className="genicon-tick-solid tick-solid ticks"></span>
-                                        1/Jan/2016
+                                        1-Feb-2016
                                     </td>
                                     <td className="task-completed-td">
-                                        2 months
+                                        1 month
                                     </td>
                                     <td className="task-completed-td td-assignee">
                                         <div className="assignee-circle">
                                             <span className="genicon-person"></span>
                                         </div>
-                                        <span className="assignee-name">
-                                            Dancun
+                                        <span className="assignee-name"  style={{fontFamily: 'Roboto'}}>
+                                            Duncan
                                         </span>
                                     </td>
                                 </tr>
@@ -328,19 +328,10 @@ const Overview = React.createClass({
                                 </tbody>
                             </table>
 
-
                         </div>
 
                     </div>
                 </div>
-
-
-
-
-
-
-
-
             </div>
         )
     }

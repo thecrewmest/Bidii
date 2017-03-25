@@ -214,13 +214,13 @@ const Task = React.createClass({
                    </div>
 
                    <div className="col-md-12 col-xs-12 show-number-of-rows">
-                       <span>Show</span>
+                       <span>Showing</span>
                        <select id="options">
                            <option>4</option>
                            <option>5</option>
                            <option>6</option>
                            <option>7</option>
-                           <option>8</option>
+                           <option selected="selected">8</option>
                            <option>9</option>
                            <option>10</option>
                            <option>11</option>
@@ -244,7 +244,7 @@ const Task = React.createClass({
                                <th className="task-th tth-0">
                                    <input type="checkbox" className="check-box"/>
                                </th>
-                               <th className="task-th tth-1">Tuid</th>
+                               <th className="task-th tth-1">ID</th>
                                <th className="task-th tth-2">Title</th>
                                <th className="task-th tth-3">Start</th>
                                <th className="task-th tth-4">Finish</th>
@@ -276,11 +276,11 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   02017-01-06
+                                   2017-01-06
                                </td>
 
                                <td className="task-td">
-                                   5 d
+                                   5d
                                </td>
 
                                <td className="task-td">
@@ -294,7 +294,7 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   Site preparation
+                                   Site, preparation
                                </td>
 
 
@@ -302,9 +302,9 @@ const Task = React.createClass({
                                    <div className="assignee-circle">
                                        <span className="genicon-person"></span>
                                    </div>
-                                   <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
-                                        </span>
+                                   <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                       &nbsp;&nbsp;Joseph
+                                   </span>
                                </td>
 
                                <td className="task-td">
@@ -330,7 +330,7 @@ const Task = React.createClass({
                                    <input type="checkbox" className="check-box"/>
                                </td>
                                <td className="task-td ttd-1">
-                                   T1001
+                                   T1002
                                </td>
 
                                <td className="task-td">
@@ -338,15 +338,15 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   2017-01-02
+                                   2017-01-06
                                </td>
 
                                <td className="task-td">
-                                   02017-01-06
+                                   2017-01-10
                                </td>
 
                                <td className="task-td">
-                                   5 d
+                                   4d
                                </td>
 
                                <td className="task-td">
@@ -354,13 +354,13 @@ const Task = React.createClass({
                                        <div className="progress progress-sm  progress-bar-warning pbar-dynamic"
                                             role="progressbar" aria-valuenow="80"
                                             aria-valuemin="0" aria-valuemax="100%"
-                                            style={{width:100+'%',height:13+'px'}}>
+                                            style={{width:50+'%',height:13+'px'}}>
                                        </div>
                                    </div>
                                </td>
 
                                <td className="task-td">
-                                   Site preparation
+                                   foundation
                                </td>
 
 
@@ -368,9 +368,9 @@ const Task = React.createClass({
                                    <div className="assignee-circle">
                                        <span className="genicon-person"></span>
                                    </div>
-                                   <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
-                                        </span>
+                                   <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                       &nbsp;&nbsp;Duncan
+                                   </span>
                                </td>
 
                                <td className="task-td">
@@ -396,7 +396,7 @@ const Task = React.createClass({
                                    <input type="checkbox" className="check-box"/>
                                </td>
                                <td className="task-td ttd-1">
-                                   T1001
+                                   T1003
                                </td>
 
                                <td className="task-td">
@@ -404,15 +404,15 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   2017-01-02
+                                   2017-01-10
                                </td>
 
                                <td className="task-td">
-                                   02017-01-06
+                                   02017-01-20
                                </td>
 
                                <td className="task-td">
-                                   5 d
+                                   10d
                                </td>
 
                                <td className="task-td">
@@ -434,9 +434,9 @@ const Task = React.createClass({
                                    <div className="assignee-circle">
                                        <span className="genicon-person"></span>
                                    </div>
-                                   <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
-                                        </span>
+                                   <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                       &nbsp;&nbsp;Joseph
+                                   </span>
                                </td>
 
                                <td className="task-td">
@@ -461,7 +461,7 @@ const Task = React.createClass({
                                    <input type="checkbox" className="check-box"/>
                                </td>
                                <td className="task-td ttd-1">
-                                   T1001
+                                   T1004
                                </td>
 
                                <td className="task-td">
@@ -469,15 +469,15 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   2017-01-02
+                                   2017-01-20
                                </td>
 
                                <td className="task-td">
-                                   02017-01-06
+                                   02017-01-26
                                </td>
 
                                <td className="task-td">
-                                   5 d
+                                   6d
                                </td>
 
                                <td className="task-td">
@@ -499,9 +499,9 @@ const Task = React.createClass({
                                    <div className="assignee-circle">
                                        <span className="genicon-person"></span>
                                    </div>
-                                   <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
-                                        </span>
+                                   <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                       &nbsp;&nbsp;Joseph
+                                   </span>
                                </td>
 
                                <td className="task-td">
@@ -529,7 +529,7 @@ const Task = React.createClass({
                                    <input type="checkbox" className="check-box"/>
                                </td>
                                <td className="task-td ttd-1">
-                                   T1001
+                                   T1005
                                </td>
 
                                <td className="task-td ">
@@ -537,15 +537,15 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   2017-01-02
+                                   2017-01-26
                                </td>
 
                                <td className="task-td">
-                                   02017-01-06
+                                   02017-01-31
                                </td>
 
                                <td className="task-td">
-                                   5 d
+                                   6d
                                </td>
 
                                <td className="task-td">
@@ -567,9 +567,9 @@ const Task = React.createClass({
                                    <div className="assignee-circle">
                                        <span className="genicon-person"></span>
                                    </div>
-                                   <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
-                                        </span>
+                                   <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                       &nbsp;&nbsp;Kelvin
+                                   </span>
                                </td>
 
                                <td className="task-td">
@@ -594,7 +594,7 @@ const Task = React.createClass({
                                    <input type="checkbox" className="check-box"/>
                                </td>
                                <td className="task-td ttd-1">
-                                   T1001
+                                   T1006
                                </td>
 
                                <td className="task-td">
@@ -602,15 +602,15 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   2017-01-02
+                                   2017-02-02
                                </td>
 
                                <td className="task-td">
-                                   02017-01-06
+                                   02017-02-03
                                </td>
 
                                <td className="task-td">
-                                   5 d
+                                   1d
                                </td>
 
                                <td className="task-td">
@@ -632,9 +632,9 @@ const Task = React.createClass({
                                    <div className="assignee-circle">
                                        <span className="genicon-person"></span>
                                    </div>
-                                   <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
-                                        </span>
+                                   <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                       &nbsp;&nbsp;Joseph
+                                   </span>
                                </td>
 
                                <td className="task-td">
@@ -659,7 +659,7 @@ const Task = React.createClass({
                                    <input type="checkbox" className="check-box"/>
                                </td>
                                <td className="task-td ttd-1">
-                                   T1001
+                                   T1007
                                </td>
 
                                <td className="task-td ">
@@ -667,15 +667,15 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   2017-01-02
+                                   2017-02-06
                                </td>
 
                                <td className="task-td">
-                                   02017-01-06
+                                   2017-02-09
                                </td>
 
                                <td className="task-td">
-                                   5 d
+                                   3d
                                </td>
 
                                <td className="task-td">
@@ -697,9 +697,9 @@ const Task = React.createClass({
                                    <div className="assignee-circle">
                                        <span className="genicon-person"></span>
                                    </div>
-                                   <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
-                                        </span>
+                                   <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                       &nbsp;&nbsp;Joseph
+                                   </span>
                                </td>
 
                                <td className="task-td">
@@ -724,7 +724,7 @@ const Task = React.createClass({
                                    <input type="checkbox" className="check-box"/>
                                </td>
                                <td className="task-td ttd-1">
-                                   T1001
+                                   T1008
                                </td>
 
                                <td className="task-td ">
@@ -732,15 +732,15 @@ const Task = React.createClass({
                                </td>
 
                                <td className="task-td">
-                                   2017-01-02
+                                   2017-02-09
                                </td>
 
                                <td className="task-td">
-                                   02017-01-06
+                                   02017-02-15
                                </td>
 
                                <td className="task-td">
-                                   5 d
+                                   4d
                                </td>
 
                                <td className="task-td">
@@ -762,9 +762,9 @@ const Task = React.createClass({
                                    <div className="assignee-circle">
                                        <span className="genicon-person"></span>
                                    </div>
-                                   <span className="assignee-name-to">
-                                            &nbsp;&nbsp;&nbsp;Vansolo
-                                        </span>
+                                   <span className="assignee-name-to" style={{fontFamily: 'Roboto'}}>
+                                       &nbsp;&nbsp;Joseph
+                                   </span>
                                </td>
 
                                <td className="task-td">

@@ -26,8 +26,13 @@
   border-bottom: 1px solid $light-blue-grey;
 }
 
+td[class*="budget-td-"] {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
 
-.budget-td-1{
+.budget-td-1 {
   width: 300px;
   text-align: center;
 }
@@ -73,6 +78,14 @@
   padding-top: 12%;
 }
 
+.budget-circle > h4 {
+  padding: 0;
+}
+
+.budget-circle > h3 {
+  margin-top: 0;
+}
+
 .plus, .equal{
   font-size: 25pt;
 }
@@ -89,6 +102,10 @@
 .budget-breakdown{
    padding-top: 5%;
   background: $white;
+}
+
+.budget-breakdown table tr > td {
+  padding: 5px 0;
 }
 
 .th-b-pc{
